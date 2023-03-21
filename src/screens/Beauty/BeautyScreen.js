@@ -19,7 +19,7 @@ function BeautyScreen() {
               alt={photo.alt}
               // width={photo.width}
               // height={photo.height}
-              layout="fill" 
+              fill
             />
           </div>
         ))}
