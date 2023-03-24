@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./Header.module.css";
+import HeaderMobile from "./HeaderMobile/HeaderMobile";
 function Header() {
-  return (
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    window.innerWidth <= 500 ? setIsMobile(true) : setIsMobile(false);
+  }, []);
+
+  return isMobile ? (
+    <HeaderMobile />
+  ) : (
     <div className={styles.header}>
       <div className={styles.header_left}>
         <Link className={styles.logo} href="/">

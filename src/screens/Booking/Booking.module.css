@@ -123,4 +123,17 @@
     display: block;
     width: 90%;
   }
+
+  .twelve {
+    margin-top: 5px;
+
+    margin-bottom: 5px;
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
+
+  .h3 {
+    margin-bottom: 15px;
+  }
 }
