@@ -2,9 +2,8 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import axios from "axios";
 
-
 import styles from "./Booking.module.css";
-import { Button, DatePicker, Form, Input, message } from "antd";
+import { Button, DatePicker, Form, Input, message, Select } from "antd";
 import Header from "../../components/Header";
 import { handleClientScriptLoad } from "next/script";
 [];
@@ -52,24 +51,15 @@ const BookingScreen = () => {
     }));
   };
 
+  const handleBudget = (value) => {
+    console.log(event);
+    setInputs((prev) => ({
+      ...prev,
+      budget: value,
+    }));
+  };
+
   console.log(photoType);
-
-  // const onDateChange = (event) => {
-  //   console.log("triggered");
-  //   setDeadlineDate(event.target.value);
-  //   console.log(deadLineDate);
-  // };
-
-  // const onTypeChange = (e) => {
-  //   console.log(e.target.value);
-  //   setPhotoType(e.target.value);
-  // };
-
-  // const onOtherChange = (e) => {
-  //   console.log(e.target.value);
-  //   setOther(e.target.value);
-  //   e.preventDefault();
-  // };
 
   const [inputs, setInputs] = useState({
     name: "",
@@ -160,7 +150,7 @@ const BookingScreen = () => {
             }}
             onChange={handleOnChange}
             value={inputs.photoType}
-            placeholder="creative/e-commerce"
+            placeholder="minimalistic/creative"
             id="photoType"
           />
         </div>
@@ -211,7 +201,34 @@ const BookingScreen = () => {
         </div>
         <div className={styles.ten}>
           <p className={styles.p}>What is your budget for a shooting?</p>
-          <Input
+          <Select
+            style={{
+              borderRadius: "0",
+            }}
+            className={styles.select}
+            optionFilterProp="children"
+            onChange={handleBudget}
+            filterOption={(input, option) =>
+              (option?.label ?? "").toLowerCase().includes(input.toLowerCase())
+            }
+            id="budget"
+            options={[
+              {
+                value: 1,
+                label: "1500 - 2000",
+              },
+              {
+                value: 2,
+                label: "2000 - 5000",
+              },
+              {
+                value: 3,
+                label: "> 5000",
+              },
+            ]}
+          />
+
+          {/* <Input
             style={{
               borderRadius: "0",
             }}
@@ -219,7 +236,7 @@ const BookingScreen = () => {
             onChange={handleOnChange}
             value={inputs.budget}
             id="budget"
-          />
+          /> */}
         </div>
         <div className={styles.eleven}>
           <p className={styles.p}>

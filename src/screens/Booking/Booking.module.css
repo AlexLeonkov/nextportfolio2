@@ -4,8 +4,12 @@
 
 .date {
   width: 100%;
- 
+
   height: 30px;
+}
+
+.select {
+  width: 100% !important;
 }
 
 .h2 {
@@ -27,8 +31,7 @@
   line-height: 24px;
 }
 
-
-.ant-input{
+.ant-input {
   border-radius: 0 !important;
 }
 .wrapper {
@@ -47,7 +50,6 @@
   grid-column: 1 / 2;
   grid-row: 1;
   border-radius: 0 !important;
-
 }
 
 .two {
@@ -110,16 +112,14 @@
 .btn {
   width: 10% !important;
   margin-top: 5px;
- 
 
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
-
 @media only screen and (max-width: 768px) {
-  .wrapper{
+  .wrapper {
     display: block;
     width: 90%;
   }

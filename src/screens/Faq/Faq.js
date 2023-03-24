@@ -1,91 +1,99 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Header from "../../components/Header";
 import styles from "./Faq.module.css";
-
-
+import "./Faq.module.css";
 import { Collapse } from "antd";
+import { CaretDownOutlined } from "@ant-design/icons";
+
 const { Panel } = Collapse;
 
 const Faqscreen = () => {
-  const onChange = (key) => {
-    console.log(key);
-  };
+  const [openedQuestion, setOpenedQuestion] = useState([]);
 
-  const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
-`;
+  const handleItemClick = (index) => {
+    if (openedQuestion.includes(index)) {
+      setOpenedQuestion((prevState) =>
+        prevState.filter((item) => item !== index)
+      );
+    } else {
+      setOpenedQuestion((prevState) => [...prevState, index]);
+    }
+  };
 
   const faqData = [
     {
-      question: "What services do you offer?",
-      answer:
-        "We offer services in photography, monthly photography, stop motions, graphic design, branding, Instagram creative direction and social media content creation.",
-    },
-    {
-      question: "Are custom packages available?",
-      answer:
-        "Yes, we offer custom packages that can be tailored to your specific needs. You can contact us via our contact form or fill out our intake form to receive a custom quote.",
-    },
-    {
       question: "Where are you based?",
       answer:
-        "We are based in Berlin, Germany, but we work with brands on an international scale. We have worked with clients in countries such as New Zealand, USA, UK, Portugal and the United Arab Emirates.",
+        "We are based in Berlin, Germany, but we are able to work with clients all over the world!",
     },
     {
-      question: "How far in advance should I contact you?",
+      question: "What shooting packages do you have?",
       answer:
-        "Due to limited availability, we recommend contacting us at least three months in advance to secure your place within our schedule. For projects that are in the mid to late stages of completion, we recommend contacting us as soon as possible to start creating visuals for your products.",
-    },
-    {
-      question: "How does your pricing work for projects?",
-      answer:
-        "Our pricing is based on the scope of work required for the project. This includes the in-depth styling, photography, and editing process, as well as the usage rights for the chosen mediums and any additional costs for props that need to be sourced.",
-    },
-    {
-      question: "What is the turnaround time?",
-      answer:
-        "Our aim is to deliver your final photos within 15-20 business days after receiving your products. This allows us to provide high-quality visuals and give the creative process time to flow.",
-    },
-    {
-      question: "How do your monthly packages work?",
-      answer:
-        "Our monthly packages require a minimum spend per month over a contracted period of three months. This allows you to choose the services you need for your business each month, and get the best out of your package. We send out a questionnaire at the start of each month allowing you to choose the services and quantity for each service, along with any direction or style preferences.",
-    },
-    {
-      question: "What payment methods do you accept?",
-      answer:
-        "We accept payment via bank transfer or PayPal. You can choose to pay a 50% deposit to secure your place within our schedule, with the remaining amount due before receiving the final photos.",
+        "We don't have exact packages. We custom quote based on the individual project requirements of our clients. The price also depends on usage rights, extra costs, and clients' deadlines. To get a quote for your project, please click here (link to contact form).",
     },
     {
       question: "What industries do you work with?",
-      answer:
-        "We primarily work with brands in the beauty, skincare, lifestyle, and beverage industries, as well as with jewellery and fashion accessories. However, we do not work with baby or children related products.",
+      answer: "At the moment, we work only with beauty brands.",
     },
     {
-      question: "Do you keep or send back the products after the shoot?",
+      question: "How far in advance should I contact you for booking?",
       answer:
-        "For monthly clients, we keep the products to use for future shoots. If you would like your products sent back, please provide a return postage bag or slip. Return postage will be paid by you.",
+        "We recommend booking a shoot at least one month in advance, but this may vary depending on the season and upcoming holidays (such as New Year, February 14th, and the Summer season). If you have a limited timeframe and require your photos earlier, an extra fee will be added to the final price.",
+    },
+    {
+      question: "How long does a project take?",
+      answer:
+        "Typically, the entire process from discussing your project to delivering the final images takes 15-21 business days. If you have a limited timeframe and require your photos earlier, an extra fee will be added to the final price.",
+    },
+    {
+      question: "What payment methods do you accept?",
+      answer: "We accept payment via bank transfer.",
+    },
+    {
+      question: "What are your payment rules?",
+      answer:
+        "To book our services, you need to pay a 50% deposit. After we finish all the images, you need to make the second payment to receive all the images in your requested resolution.",
+    },
+    {
+      question: "Do you send products back?",
+      answer:
+        "Yes, we can send your products back. However, you will be responsible for all return shipping costs.",
+    },
+    {
+      question: "Is it possible to return the paid deposit?",
+      answer:
+        "No, the deposit is non-refundable in any cases. However, you have the option to schedule the shoot within the next 2 months.",
     },
   ];
   return (
     <>
       <Header />
       <div className={styles.faqContainer}>
-        <Collapse className={styles.antCollapse} defaultActiveKey={["0"]}>
-          {faqData.map((faq, index) => (
-            <Panel
-            
-              className={styles.antCollapseItem}
-              header={faq.question}
-              key={index}
-            >
-              <p>{faq.answer}</p>
-            </Panel>
-          ))}
-        </Collapse>
+        {faqData.map((faq, index) => (
+          <div
+            onClick={() => handleItemClick(index)}
+            className={styles.item}
+            key={index}
+          >
+            <CaretDownOutlined className={styles.arrow} />
+            <div className={styles.itemText}>
+              <p className={styles.question}>{faq.question}</p>
+
+              <p
+                // className={`${styles.answer} ${
+                //   openedQuestion.includes(index) ? styles.answerOpen : ""
+                // }`}
+
+                className={`${styles.answer} ${
+                  openedQuestion.includes(index) ? styles.answerOpen : ""
+                }`}
+              >
+                {faq.answer}
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
     </>
   );

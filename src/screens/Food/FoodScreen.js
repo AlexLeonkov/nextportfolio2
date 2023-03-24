@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import { photos } from "./images.js";
-import styles from "./Beauty.module.css";
+import styles from "./Food.module.css";
 
-//import Header from "../layout/header";
+
 
 import Header from "../../components/Header";
 
-function BeautyScreen() {
+function FoodScreen() {
   return (
     <>
       <Header />
@@ -26,4 +26,4 @@ function BeautyScreen() {
   );
 }
 
-export default BeautyScreen;
+export default FoodScreen;
