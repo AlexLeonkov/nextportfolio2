@@ -2,6 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import styles from "./HeaderMobile.module.css";
 import { MenuOutlined, CloseOutlined } from "@ant-design/icons";
+import clsx from "clsx";
 function HeaderMobile() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -28,7 +29,7 @@ function HeaderMobile() {
 
       <div
         id="myNav"
-        className={`${styles.overlay} ${menuOpen ? styles.open : ""}`}
+        className={clsx(styles.overlay, menuOpen ? styles.open : "")}
       >
         <CloseOutlined
           className={styles.menuButton}

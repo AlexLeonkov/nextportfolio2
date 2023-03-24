@@ -5,6 +5,7 @@ import styles from "./Faq.module.css";
 import "./Faq.module.css";
 import { Collapse } from "antd";
 import { CaretDownOutlined } from "@ant-design/icons";
+import clsx from 'clsx';
 
 const { Panel } = Collapse;
 
@@ -88,9 +89,10 @@ const Faqscreen = () => {
               <p className={styles.question}>{faq.question}</p>
 
               <p
-                className={`${styles.answer} ${
+                className={clsx(
+                  styles.answer,
                   openedQuestion.includes(index) ? styles.answerOpen : ""
-                }`}
+                )}
               >
                 {faq.answer}
               </p>
