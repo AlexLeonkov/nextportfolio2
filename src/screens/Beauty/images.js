@@ -29,5 +29,5 @@ export const photos = [
   { id: 28, src: "/beauty/28.jpg", alt: "Photo 28", width: 1080, height: 1350 },
   { id: 29, src: "/beauty/29.jpg", alt: "Photo 29", width: 1080, height: 1350 },
   { id: 30, src: "/beauty/30.jpg", alt: "Photo 30", width: 1080, height: 1350 },
-  { id: 31, src: "/beauty/31.jpg", alt: "Photo 31", width: 2000, height: 2500 },
+  // { id: 31, src: "/beauty/31.jpg", alt: "Photo 31", width: 2000, height: 2500 },
 ];
