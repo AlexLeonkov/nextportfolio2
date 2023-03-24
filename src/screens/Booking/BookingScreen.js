@@ -7,10 +7,8 @@ import { Button, DatePicker, Form, Input, message, Select } from "antd";
 import Header from "../../components/Header";
 import { handleClientScriptLoad } from "next/script";
 [];
-//import ContactForm from "../Info/components/ContactForm";
 
 const BookingScreen = () => {
-  console.log("Boking");
   const [deadLineDate, setDeadlineDate] = useState("");
   const [photoType, setPhotoType] = useState("test");
   const [other, setOther] = useState("");
@@ -59,8 +57,6 @@ const BookingScreen = () => {
     }));
   };
 
-  console.log(photoType);
-
   const [inputs, setInputs] = useState({
     name: "",
     email: "",
@@ -81,10 +77,6 @@ const BookingScreen = () => {
       [event.target.id]: event.target.value,
     }));
   };
-
-  useEffect(() => {
-    console.log("INPUTS", inputs);
-  }, [inputs]);
 
   return (
     <>
@@ -227,16 +219,6 @@ const BookingScreen = () => {
               },
             ]}
           />
-
-          {/* <Input
-            style={{
-              borderRadius: "0",
-            }}
-            placeholder="Minimum 1000$"
-            onChange={handleOnChange}
-            value={inputs.budget}
-            id="budget"
-          /> */}
         </div>
         <div className={styles.eleven}>
           <p className={styles.p}>

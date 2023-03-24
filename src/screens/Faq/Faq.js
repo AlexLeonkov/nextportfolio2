@@ -5,7 +5,7 @@ import styles from "./Faq.module.css";
 import "./Faq.module.css";
 import { Collapse } from "antd";
 import { CaretDownOutlined } from "@ant-design/icons";
-import clsx from 'clsx';
+import clsx from "clsx";
 
 const { Panel } = Collapse;
 
@@ -74,6 +74,7 @@ const Faqscreen = () => {
         "Common terms in a product photography licensing agreement include usage rights, duration of usage, and exclusivity. Usage rights refer to how the images can be used, duration of usage refers to how long the client can use the images, and exclusivity refers to whether or not the photographer agrees not to license the images to any other clients for a certain period of time. ",
     },
   ];
+
   return (
     <>
       <Header />

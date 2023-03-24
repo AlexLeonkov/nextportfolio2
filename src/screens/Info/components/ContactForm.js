@@ -8,7 +8,6 @@ const ContactForm = () => {
   const [issue, setIssue] = useState("");
 
   const onFinish = async () => {
-    console.log(name, issue);
     axios({
       method: "POST",
       url: "https://formbold.com/s/oyra6",
