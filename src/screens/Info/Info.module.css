@@ -1,16 +1,16 @@
 .about {
-  margin: auto;
-
   color: rgba(0, 0, 0, 0.85);
   font-size: 14px;
+  font-feature-settings: "tnum";
   font-variant: tabular-nums;
   line-height: 1.5715;
   width: 53%;
-  margin: auto;
   height: 100vh;
   display: flex;
   align-items: center;
-  margin-top: -100px;
+  margin: -100px auto auto;
+  justify-content: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
