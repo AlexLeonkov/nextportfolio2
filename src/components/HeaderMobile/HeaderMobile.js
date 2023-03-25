@@ -9,6 +9,9 @@ import {
 } from "@ant-design/icons";
 import clsx from "clsx";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBell } from "@fortawesome/free-solid-svg-icons";
+import { faPinterestP } from "@fortawesome/free-brands-svg-icons";
 function HeaderMobile() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -62,6 +65,10 @@ function HeaderMobile() {
           </Link>
 
           <div className={styles.socialIcons}>
+            <a className={styles.socialIcon} href="https://pin.it/72jZOCn/">
+              <FontAwesomeIcon icon={faPinterestP} />
+            </a>
+
             <a
               className={styles.socialIcon}
               href="https://www.instagram.com/hhey.photography/"
