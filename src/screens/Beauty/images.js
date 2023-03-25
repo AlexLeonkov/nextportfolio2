@@ -6,7 +6,6 @@ export const photos = [
   { id: 5, src: "/beauty/5.jpg", alt: "Photo 5", width: 1080, height: 1350 },
   { id: 6, src: "/beauty/6.jpg", alt: "Photo 6", width: 1080, height: 1350 },
   { id: 7, src: "/beauty/7.jpg", alt: "Photo 7", width: 1080, height: 1350 },
-  { id: 8, src: "/beauty/8.jpg", alt: "Photo 8", width: 1080, height: 1350 },
   { id: 9, src: "/beauty/9.jpg", alt: "Photo 9", width: 1080, height: 1350 },
   { id: 10, src: "/beauty/10.jpg", alt: "Photo 10", width: 1080, height: 1350 },
   { id: 11, src: "/beauty/11.jpg", alt: "Photo 11", width: 1080, height: 1350 },
