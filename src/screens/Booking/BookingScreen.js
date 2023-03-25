@@ -236,10 +236,10 @@ const BookingScreen = () => {
         </Button>
       </Form>
 
-      <h2>
+      {/* <h4>
         If you have any further questions please contact me via e-mail
         <b>hello@hheyphotography.com</b>
-      </h2>
+      </h4> */}
     </>
   );
 };
