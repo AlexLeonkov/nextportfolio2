@@ -88,7 +88,7 @@ const BookingScreen = () => {
       </h3>
       <Form onFinish={onFinish} className={styles.wrapper}>
         <div className={styles.one}>
-          <p className={styles.p}>Your full name?</p>
+          <p className={styles.p}>Your full name</p>
           <Input
             style={{
               borderRadius: "0",
@@ -99,7 +99,7 @@ const BookingScreen = () => {
           />
         </div>
         <div className={styles.two}>
-          <p className={styles.p}>Your e-mail address?</p>
+          <p className={styles.p}>Your e-mail address</p>
           <Input
             style={{
               borderRadius: "0",
@@ -121,7 +121,7 @@ const BookingScreen = () => {
           />
         </div>
         <div className={styles.four}>
-          <p className={styles.p}>Link to your website/social media?</p>
+          <p className={styles.p}>Link to your website/social media</p>
           <Input
             style={{
               borderRadius: "0",
@@ -235,6 +235,11 @@ const BookingScreen = () => {
           Submit
         </Button>
       </Form>
+
+      <h2>
+        If you have any further questions please contact me via e-mail
+        <b>hello@hheyphotography.com</b>
+      </h2>
     </>
   );
 };
