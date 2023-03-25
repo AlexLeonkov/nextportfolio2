@@ -5,10 +5,12 @@
   font-size: 14px;
   font-variant: tabular-nums;
   line-height: 1.5715;
-
   width: 53%;
   margin: auto;
-  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-top: -100px;
 }
 
 @media screen and (max-width: 768px) {
