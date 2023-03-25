@@ -10,3 +10,9 @@
   margin: auto;
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .about {
+    width: 81%;
+  }
+}
