@@ -6,6 +6,7 @@ import styles from "./Booking.module.css";
 import { Button, DatePicker, Form, Input, message, Select } from "antd";
 import Header from "../../components/Header";
 import { handleClientScriptLoad } from "next/script";
+import clsx from "clsx";
 [];
 
 const BookingScreen = () => {
@@ -235,6 +236,19 @@ const BookingScreen = () => {
           Submit
         </Button>
       </Form>
+
+      <h3 className={clsx(styles.h3, styles.button)}>
+        If you have any further questions, please contact us via e-mail:
+        <br />
+        <a className={styles.a} href="mailto:hello@hheyphotography.com">
+          <b style={{ marginTop: "10px" }}>hello@hheyphotography.com</b>
+        </a>
+        <div
+          style={{
+            height: "15px",
+          }}
+        ></div>
+      </h3>
 
       {/* <h4>
         If you have any further questions please contact me via e-mail
