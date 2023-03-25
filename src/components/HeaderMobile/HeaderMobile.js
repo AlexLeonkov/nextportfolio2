@@ -1,8 +1,14 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import styles from "./HeaderMobile.module.css";
-import { MenuOutlined, CloseOutlined } from "@ant-design/icons";
+import {
+  MenuOutlined,
+  CloseOutlined,
+  InstagramOutlined,
+  LinkedinOutlined,
+} from "@ant-design/icons";
 import clsx from "clsx";
+import Image from "next/image";
 function HeaderMobile() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -54,6 +60,21 @@ function HeaderMobile() {
           <Link href="/faq" onClick={handleCloseClick}>
             FAQs
           </Link>
+
+          <div className={styles.socialIcons}>
+            <a
+              className={styles.socialIcon}
+              href="https://www.instagram.com/hhey.photography/"
+            >
+              <InstagramOutlined />
+            </a>
+            <a
+              className={styles.socialIcon}
+              href="https://www.linkedin.com/company/hhey-photography-studio/"
+            >
+              <LinkedinOutlined />
+            </a>
+          </div>
         </div>
       </div>
     </>
