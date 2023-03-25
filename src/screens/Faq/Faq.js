@@ -31,7 +31,7 @@ const Faqscreen = () => {
     {
       question: "What shooting packages do you have?",
       answer:
-        "We don't have exact packages. We custom quote based on the individual project requirements of our clients. The price also depends on usage rights, extra costs, and clients' deadlines. To get a quote for your project, please click here (link to contact form).",
+        "We don't have exact packages. We custom quote based on the individual project requirements of our clients. The price also depends on usage rights, extra costs, and clients' deadlines. To get a quote for your project, visit Booking page of the website.",
     },
     {
       question: "What industries do you work with?",
