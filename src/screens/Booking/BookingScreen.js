@@ -20,7 +20,6 @@ const BookingScreen = () => {
       data: inputs,
     })
       .then((r) => {
-        console.log("sent");
         message.success("The message has been sent");
         setInputs({
           name: "",
@@ -42,7 +41,6 @@ const BookingScreen = () => {
   };
 
   const handleDate = (date, dateString) => {
-    console.log(date, dateString);
     setInputs((prev) => ({
       ...prev,
       deadline: `our date is ${dateString}`,
@@ -50,7 +48,6 @@ const BookingScreen = () => {
   };
 
   const handleBudget = (value) => {
-    console.log(event);
     setInputs((prev) => ({
       ...prev,
       budget: value,
@@ -113,7 +110,7 @@ const BookingScreen = () => {
           />
         </div>
         <div className={styles.three}>
-          <p className={styles.p}>What is your brand/product about?</p>
+          <p className={styles.p}>What is your brand/business about?</p>
           <Input
             style={{
               borderRadius: "0",
@@ -142,7 +139,7 @@ const BookingScreen = () => {
             }}
             onChange={handleOnChange}
             value={inputs.photoType}
-            placeholder="minimalistic/creative"
+            placeholder="Minimalistic / creative"
             id="photoType"
           />
         </div>
