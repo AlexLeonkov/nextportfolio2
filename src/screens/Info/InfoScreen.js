@@ -8,15 +8,17 @@ const InfoScreen = () => {
     <>
       <Header />
       <div className={styles.about}>
-        Hello, my name is Lena, and I am a professional photographer originally
-        from Ukraine. I recently relocated to Berlin to pursue my passion for
-        photography. I have been working in this field for five years and have
-        had the opportunity to work with top clients in the beauty industry, as
-        you can see in my portfolio. Currently, I specialize in product
-        photography, particularly for beauty brands. If you need a skilled
-        product photographer, please feel free to contact me through the form,
-        Instagram, or email. I would be happy to offer my professional
-        experience and expertise.
+        Lena, originally from Ukraine but now based in Berlin, Germany, is a
+        professional product photographer, art director, and photo stylist. Her
+        extensive experience in food and reportage photography, including
+        working for Michelin restaurants, has honed her eye for detail and
+        ability to capture the essence of a subject. Presently, Lena specializes
+        in product photography for beauty brands and is constantly seeking
+        inspiration to create exceptional images. With her commitment to her
+        craft and wealth of experience, Lena is a strong contender for success
+        in product photography for beauty brands. Her skills and passion have
+        the potential to produce stunning images that highlight the beauty and
+        distinctiveness of the products she photographs.
       </div>
     </>
   );

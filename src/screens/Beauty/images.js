@@ -1,9 +1,9 @@
 export const photos = [
   { id: 1, src: "/beauty/1.jpg", alt: "Photo 1", width: 1080, height: 1350 },
-  { id: 2, src: "/beauty/2.jpg", alt: "Photo 2", width: 2000, height: 3000 },
+  { id: 6, src: "/beauty/6.jpg", alt: "Photo 6", width: 1080, height: 1350 },
   { id: 3, src: "/beauty/3.jpg", alt: "Photo 3", width: 1080, height: 1350 },
   { id: 4, src: "/beauty/4.jpg", alt: "Photo 4", width: 1080, height: 1350 },
-  { id: 6, src: "/beauty/6.jpg", alt: "Photo 6", width: 1080, height: 1350 },
+  { id: 2, src: "/beauty/2.jpg", alt: "Photo 2", width: 2000, height: 3000 },
   { id: 5, src: "/beauty/5.jpg", alt: "Photo 5", width: 1080, height: 1350 },
   { id: 9, src: "/beauty/9.jpg", alt: "Photo 9", width: 1080, height: 1350 },
   { id: 7, src: "/beauty/7.jpg", alt: "Photo 7", width: 1080, height: 1350 },
