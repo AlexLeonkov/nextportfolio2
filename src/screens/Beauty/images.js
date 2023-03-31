@@ -1,4 +1,6 @@
 export const photos = [
+  { id: 32, src: "/beauty/32.jpg", alt: "Photo 32", width: 1080, height: 1350 },
+  { id: 33, src: "/beauty/33.jpg", alt: "Photo 33", width: 1080, height: 1350 },
   { id: 1, src: "/beauty/1.jpg", alt: "Photo 1", width: 1080, height: 1350 },
   { id: 6, src: "/beauty/6.jpg", alt: "Photo 6", width: 1080, height: 1350 },
   { id: 3, src: "/beauty/3.jpg", alt: "Photo 3", width: 1080, height: 1350 },
@@ -29,7 +31,4 @@ export const photos = [
   { id: 29, src: "/beauty/29.jpg", alt: "Photo 29", width: 1080, height: 1350 },
   { id: 30, src: "/beauty/30.jpg", alt: "Photo 30", width: 1080, height: 1350 },
   // { id: 31, src: "/beauty/31.jpg", alt: "Photo 31", width: 2000, height: 2500 },
-
-  { id: 32, src: "/beauty/32.jpg", alt: "Photo 32", width: 1080, height: 1350 },
-  { id: 33, src: "/beauty/33.jpg", alt: "Photo 33", width: 1080, height: 1350 },
 ];
