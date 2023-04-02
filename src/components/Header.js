@@ -11,18 +11,15 @@ function Header() {
     window.innerWidth <= 500 ? setIsMobile(true) : setIsMobile(false);
   }, []);
 
-  function handleLogoClick() {
-    window.location.reload(); // reloads the current page
-  }
 
   return isMobile ? (
     <HeaderMobile />
   ) : (
     <div className={styles.header}>
       <div className={styles.header_left}>
-        <a className={styles.logo} href="/" onClick={handleLogoClick}>
+        <Link className={styles.logo} href="/" >
           HHEY.PHOTOGRAPHY STUDIO
-        </a>
+        </Link>
       </div>
       <div className={styles.header_right}>
         <Link href="/beauty">BEAUTY</Link>
