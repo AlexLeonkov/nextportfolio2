@@ -81,11 +81,9 @@ const BookingScreen = () => {
       <Header />
       <h2 className={styles.h2}>HOW TO BOOK A SHOOTING?</h2>
       <h3 className={styles.h3}>
-        We need to know more about your business/brand.<br></br>We have prepared
-        some basic questions. Please fill in the form below and we will get back
-        <br></br>
-        to you within 48 hours with a proposal and a quote for our photography
-        services.
+        We’ve prepared some basic questions to know more about your
+        brand/business. <br></br>Please take time to fill in the form below and
+        we will get back to you within 48 hours.
       </h3>
       <Form onFinish={onFinish} className={styles.wrapper}>
         <div className={styles.one}>
@@ -137,6 +135,7 @@ const BookingScreen = () => {
           <Input
             style={{
               borderRadius: "0",
+              fontFamily: "Baskerville",
             }}
             onChange={handleOnChange}
             value={inputs.photoType}

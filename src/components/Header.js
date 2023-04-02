@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./Header.module.css";
 import HeaderMobile from "./HeaderMobile/HeaderMobile";
+import Router from "next/router";
+
 function Header() {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -9,14 +11,18 @@ function Header() {
     window.innerWidth <= 500 ? setIsMobile(true) : setIsMobile(false);
   }, []);
 
+  function handleLogoClick() {
+    window.location.reload(); // reloads the current page
+  }
+
   return isMobile ? (
     <HeaderMobile />
   ) : (
     <div className={styles.header}>
       <div className={styles.header_left}>
-        <Link className={styles.logo} href="/">
+        <a className={styles.logo} href="/" onClick={handleLogoClick}>
           HHEY.PHOTOGRAPHY STUDIO
-        </Link>
+        </a>
       </div>
       <div className={styles.header_right}>
         <Link href="/beauty">BEAUTY</Link>

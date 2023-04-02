@@ -31,7 +31,7 @@ const Faqscreen = () => {
     {
       question: "What shooting packages do you have?",
       answer:
-        "We don't have exact packages. We custom quote based on the individual project requirements of our clients. The price also depends on usage rights, extra costs, and clients' deadlines. To get a quote for your project, visit Booking page of the website.",
+        "We don't have exact packages. We individually quote based on the project requirements of our clients. The price also depends on usage rights, extra costs and client`s deadlines. To get a quote for your project, visit Booking page of the website.",
     },
     {
       question: "What industries do you work with?",
@@ -54,7 +54,7 @@ const Faqscreen = () => {
     {
       question: "What are your payment rules?",
       answer:
-        "To book our services, you need to pay a 50% deposit. After we finish all the images, you need to make the second payment to receive all the images in your requested resolution.",
+        "To book our services, you need to pay a 50% deposit. After we have all the photos ready, you need to make the second payment to receive all the images in the requested resolution.",
     },
     {
       question: "Do you send products back?",
@@ -64,7 +64,7 @@ const Faqscreen = () => {
     {
       question: "Is it possible to return the paid deposit?",
       answer:
-        "No, the deposit is non-refundable in any cases. However, you have the option to schedule the shoot within the next 2 months.",
+        "No, the deposit is non-refundable. However, you have the option to schedule the shoot within the next 2 months.",
     },
 
     {
