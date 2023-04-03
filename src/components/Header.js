@@ -11,7 +11,7 @@ function Header({ children }) {
 
   useEffect(() => {
     window.innerWidth <= 500 ? setIsMobile(true) : setIsMobile(false);
-  });
+  }, []);
 
   return isMobile ? (
     <HeaderMobile children={children} />

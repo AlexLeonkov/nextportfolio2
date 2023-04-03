@@ -11,6 +11,7 @@ export const useClickState = () => {
   function closeHandler() {
     console.log("triggeres, clicked close: ", clicked);
     setClicked(false);
+    //setClicked((current)=> !current)
   }
 
   return [clicked, clickHandler, closeHandler];
