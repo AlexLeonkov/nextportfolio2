@@ -14,7 +14,7 @@ function Header({ children }) {
   }, []);
 
   return isMobile ? (
-    <HeaderMobile children={children} />
+    <HeaderMobile >{children}</HeaderMobile>
   ) : (
     <>
       <div className={styles.header}>
