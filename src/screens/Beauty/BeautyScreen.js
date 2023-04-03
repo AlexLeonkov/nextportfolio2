@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { photos } from "./images.js";
 import styles from "./Beauty.module.css";
@@ -13,19 +13,20 @@ import { useClickState } from "@component/Hooks/useClickState.js";
 function BeautyScreen() {
   // const [clicked, setClicked] = useState(false);
 
-  const [clicked, clickHandler, closeHandler] = useClickState(false);
+  const [clicked, clickHandler, closeHandler] = useClickState();
   const [id, setId] = useState(null);
-  // const clickHandler = (id) => {
-  //   setId(id);
-  //   setClicked((current) => !current);
-
-  // };
+  
 
   const handleCLick = (id) => {
     clickHandler();
-
     setId(id);
   };
+
+useEffect(()=> {
+  console.log("clicked: ", clicked);
+  
+},[clicked])
+
 
   return (
     <>

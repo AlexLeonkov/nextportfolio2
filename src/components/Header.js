@@ -8,18 +8,23 @@ import { useClickState } from "@component/Hooks/useClickState";
 function Header({ children }) {
   const [isMobile, setIsMobile] = useState(false);
   const [clicked, clickHandler, closeHandler] = useClickState(false);
-  
+
   useEffect(() => {
     window.innerWidth <= 500 ? setIsMobile(true) : setIsMobile(false);
+    console.log(children)
   }, []);
 
   return isMobile ? (
-    <HeaderMobile />
+    <HeaderMobile children = {children} />
   ) : (
     <>
       <div className={styles.header}>
         <div className={styles.header_left}>
-          <Link className={styles.logo} href="/" onClick={closeHandler}>
+          <Link
+            className={styles.logo}
+            href="/"
+            onClick={closeHandler}
+          >
             HHEY.PHOTOGRAPHY STUDIO
           </Link>
         </div>
@@ -31,7 +36,7 @@ function Header({ children }) {
           <Link href="/faq">FAQs</Link>
         </div>
       </div>
-     
+
       {children}
     </>
   );

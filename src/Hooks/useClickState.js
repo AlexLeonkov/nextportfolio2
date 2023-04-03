@@ -9,8 +9,8 @@ export const useClickState = () => {
   }
 
   function closeHandler() {
+    console.log("triggeres, clicked close: ", clicked);
     setClicked(false);
-    console.log("triggeres, clicked: ", clicked);
   }
 
   return [clicked, clickHandler, closeHandler];
