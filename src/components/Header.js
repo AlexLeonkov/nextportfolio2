@@ -11,20 +11,15 @@ function Header({ children }) {
 
   useEffect(() => {
     window.innerWidth <= 500 ? setIsMobile(true) : setIsMobile(false);
-    console.log(children)
-  }, []);
+  });
 
   return isMobile ? (
-    <HeaderMobile children = {children} />
+    <HeaderMobile children={children} />
   ) : (
     <>
       <div className={styles.header}>
         <div className={styles.header_left}>
-          <Link
-            className={styles.logo}
-            href="/"
-            onClick={closeHandler}
-          >
+          <Link className={styles.logo} href="/" onClick={closeHandler}>
             HHEY.PHOTOGRAPHY STUDIO
           </Link>
         </div>
