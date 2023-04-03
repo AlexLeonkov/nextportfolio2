@@ -12,7 +12,7 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
 import { faPinterestP } from "@fortawesome/free-brands-svg-icons";
-function HeaderMobile() {
+function HeaderMobile({children}) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   function handleMenuToggle() {
@@ -84,7 +84,7 @@ function HeaderMobile() {
           </div>
         </div>
       </div>
-      {/* {children} */}
+      {children}
     </>
   );
 }
