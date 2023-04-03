@@ -6,7 +6,6 @@ import styles from "./Info.module.css";
 const InfoScreen = () => {
   return (
     <>
-      <Header />
       <div className={styles.about}>
         Lena, originally from Ukraine but now based in Berlin, Germany, is a
         professional product photographer, art director, and photo stylist. Her

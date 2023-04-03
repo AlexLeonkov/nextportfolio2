@@ -78,7 +78,6 @@ const BookingScreen = () => {
 
   return (
     <>
-      <Header />
       <h2 className={styles.h2}>HOW TO BOOK A SHOOTING?</h2>
       <h3 className={styles.h3}>
         We’ve prepared some basic questions to know more about your

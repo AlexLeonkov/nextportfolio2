@@ -8,25 +8,27 @@ import styles from "./Beauty.module.css";
 import Header from "../../components/Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { useClickState } from "@component/Hooks/useClickState.js";
 
 function BeautyScreen() {
-  const [clicked, setClicked] = useState(false);
+  // const [clicked, setClicked] = useState(false);
+
+  const [clicked, clickHandler, closeHandler] = useClickState(false);
   const [id, setId] = useState(null);
-  const clickHandler = (id) => {
+  // const clickHandler = (id) => {
+  //   setId(id);
+  //   setClicked((current) => !current);
+
+  // };
+
+  const handleCLick = (id) => {
+    clickHandler();
+
     setId(id);
-    setClicked((current) => !current);
-
-    console.log(id);
-  };
-
-  const closeHandler = () => {
-    setClicked((current) => !current);
   };
 
   return (
     <>
-      <Header />
-
       {clicked && (
         <div className={styles.imageContainer}>
           <div onClick={closeHandler}>
@@ -57,7 +59,7 @@ function BeautyScreen() {
           {photos.map((photo) => (
             <div className={styles.photoContainer} key={photo.id}>
               <Image
-                onClick={() => clickHandler(photo.id)}
+                onClick={() => handleCLick(photo.id)}
                 src={photo.src}
                 alt={photo.alt}
                 fill

@@ -76,7 +76,6 @@ const Faqscreen = () => {
 
   return (
     <>
-      <Header />
       <div className={styles.faqContainer}>
         {faqData.map((faq, index) => (
           <div
