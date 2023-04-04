@@ -49,7 +49,7 @@ function BeautyScreen() {
 
 
     if (nextId === 31) {
-      setId(32);
+      setId(30);
       return;
     }
     if (nextId > photos.length) {
