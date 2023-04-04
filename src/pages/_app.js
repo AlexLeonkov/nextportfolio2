@@ -31,7 +31,7 @@ export default function App({ Component, pageProps }) {
     return () => {
       Router.events.off("routeChangeComplete", handleRouteChange);
     };
-  }, [router.events]);
+  }, [Router.events]);
 
   return (
     <Header setClicked={setClicked} clicked={clicked}>
