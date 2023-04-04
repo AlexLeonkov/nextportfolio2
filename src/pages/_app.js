@@ -14,8 +14,11 @@ config.autoAddCss = false;
 
 export default function App({ Component, pageProps }) {
   const [clicked, setClicked] = useState(false);
-  
 
+  useEffect(() => {
+    console.log("called");
+    window.scrollTo(0, 0);
+  });
 
   return (
     <Header setClicked={setClicked} clicked={clicked}>
