@@ -18,7 +18,7 @@ import { useClickState } from "@component/Hooks/useClickState.js";
 function BeautyScreen() {
   const [clicked, clickHandler, closeHandler] = useClickState();
   const [id, setId] = useState(null);
-
+  const [height, setHeight] = useState(720);
   const handleCLick = (id) => {
     clickHandler();
     setId(id);
@@ -27,7 +27,10 @@ function BeautyScreen() {
   const ref = useRef(null);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     ref.current.focus();
+    setHeight(screen.height * 0.8)
+    console.log(screen.height);
   }, []);
 
   const handleKeyDown = (e) => {
@@ -46,7 +49,6 @@ function BeautyScreen() {
       setId(9);
       return;
     }
-
 
     if (nextId === 31) {
       setId(30);
@@ -67,7 +69,6 @@ function BeautyScreen() {
       return;
     }
 
-
     if (previousId === 31) {
       setId(30);
       return;
@@ -83,7 +84,7 @@ function BeautyScreen() {
   return (
     <div tabIndex={-1} ref={ref} onKeyDown={handleKeyDown}>
       {clicked && (
-        <div  className={styles.imageContainer}>
+        <div className={styles.imageContainer}>
           <FontAwesomeIcon
             size="2xl"
             className={styles.leftArrow}
@@ -97,8 +98,8 @@ function BeautyScreen() {
           </div>
           <Image
             className={styles.oneImage}
-            width={432}
-            height={540}
+            width={height / 1.25}
+            height={height}
             style={{
               zIndex: 100,
             }}
