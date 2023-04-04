@@ -46,6 +46,12 @@ function BeautyScreen() {
       setId(9);
       return;
     }
+
+
+    if (nextId === 31) {
+      setId(32);
+      return;
+    }
     if (nextId > photos.length) {
       setId(photos.length);
     } else {
@@ -58,6 +64,12 @@ function BeautyScreen() {
 
     if (previousId === 8) {
       setId(7);
+      return;
+    }
+
+
+    if (previousId === 31) {
+      setId(30);
       return;
     }
 
