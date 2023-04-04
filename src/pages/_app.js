@@ -15,18 +15,21 @@ config.autoAddCss = false;
 
 export default function App({ Component, pageProps }) {
   const [clicked, setClicked] = useState(false);
-  const router = useRouter();
+  const Router = useRouter();
 
   useEffect(() => {
-    const handleRouteChange = (url) => {
-      window.scrollTo(0, 0)
-      window.scroll({ top: 0 })
+    const handleRouteChange = () => {
+      window.scroll({
+        top: 1,
+        left: 0,
+        behavior: "smooth",
+      });
     };
 
-    router.events.on("routeChangeComplete", handleRouteChange);
+    Router.events.on("routeChangeComplete", handleRouteChange);
 
     return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
+      Router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router.events]);
 
