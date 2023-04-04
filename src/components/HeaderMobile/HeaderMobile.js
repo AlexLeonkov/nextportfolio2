@@ -23,10 +23,12 @@ function HeaderMobile({children}) {
     setMenuOpen(false);
   }
 
+
+
   return (
     <>
       <header className={styles.header}>
-        <Link href="/">HHEY.PHOTOGRAPHY STUDIO</Link>
+        <Link  href="/">HHEY.PHOTOGRAPHY STUDIO</Link>
 
         {!menuOpen && (
           <MenuOutlined

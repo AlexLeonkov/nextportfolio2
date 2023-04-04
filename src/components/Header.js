@@ -9,6 +9,10 @@ function Header({ children }) {
   const [isMobile, setIsMobile] = useState(false);
   const [clicked, clickHandler, closeHandler] = useClickState(false);
 
+  function handleReload() {
+    window.location.reload(false);
+  }
+
   useEffect(() => {
     window.innerWidth <= 500 ? setIsMobile(true) : setIsMobile(false);
   }, []);
@@ -19,7 +23,7 @@ function Header({ children }) {
     <>
       <div className={styles.header}>
         <div className={styles.header_left}>
-          <Link className={styles.logo} href="/" onClick={closeHandler}>
+          <Link onClick={handleReload} className={styles.logo} href="/" >
             HHEY.PHOTOGRAPHY STUDIO
           </Link>
         </div>
