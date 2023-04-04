@@ -15,6 +15,7 @@ function Header({ children }) {
 
   useEffect(() => {
     window.innerWidth <= 500 ? setIsMobile(true) : setIsMobile(false);
+    window.scrollTo(0, 0)
   }, []);
 
   return isMobile ? (
