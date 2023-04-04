@@ -21,7 +21,7 @@ function Header({ children }) {
   return isMobile ? (
     <HeaderMobile />
   ) : (
-    <div id="top">
+    <div >
       <div className={styles.header}>
         <div className={styles.header_left}>
           <Link onClick={handleReload} className={styles.logo} href="/">
