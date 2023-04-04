@@ -10,7 +10,7 @@ function Header({ children }) {
   const [clicked, clickHandler, closeHandler] = useClickState(false);
 
   function handleReload() {
-    window.location.reload(false);
+    // window.location.reload(false);
   }
 
   useEffect(() => {

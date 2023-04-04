@@ -19,7 +19,8 @@ export default function App({ Component, pageProps }) {
 
   useEffect(() => {
     const handleRouteChange = (url) => {
-      window.scrollTo(0, 0);
+      window.scrollTo(0, 0)
+      window.scroll({ top: 0 })
     };
 
     router.events.on("routeChangeComplete", handleRouteChange);
