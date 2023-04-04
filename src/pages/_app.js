@@ -16,10 +16,9 @@ export default function App({ Component, pageProps }) {
   const [clicked, setClicked] = useState(false);
 
   useEffect(() => {
-    console.log("called");
-    window.scrollTo(0, 0);
-  });
-
+    // 👇️ scroll to top on page load
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <Header setClicked={setClicked} clicked={clicked}>
       <Component {...pageProps} />
