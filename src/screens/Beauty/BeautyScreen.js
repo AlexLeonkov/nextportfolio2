@@ -14,6 +14,7 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { useClickState } from "@component/Hooks/useClickState.js";
+import { useRouter } from "next/router.js";
 
 function BeautyScreen() {
   const [clicked, clickHandler, closeHandler] = useClickState();
@@ -29,7 +30,7 @@ function BeautyScreen() {
   useEffect(() => {
     window.scrollTo(0, 0);
     ref.current.focus();
-    setHeight(screen.height * 0.8)
+    setHeight(screen.height * 0.8);
     console.log(screen.height);
   }, []);
 

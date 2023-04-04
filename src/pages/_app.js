@@ -15,27 +15,13 @@ config.autoAddCss = false;
 
 export default function App({ Component, pageProps }) {
   const [clicked, setClicked] = useState(false);
-  const Router = useRouter();
-
-  useEffect(() => {
-    const handleRouteChange = () => {
-      window.scroll({
-        top: 1,
-        left: 0,
-        behavior: "smooth",
-      });
-    };
-
-    Router.events.on("routeChangeComplete", handleRouteChange);
-
-    return () => {
-      Router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [Router.events]);
+  
 
   return (
-    <Header setClicked={setClicked} clicked={clicked}>
-      <Component {...pageProps} />
-    </Header>
+    <div >
+      <Header setClicked={setClicked} clicked={clicked}>
+        <Component {...pageProps} />
+      </Header>
+    </div>
   );
 }
