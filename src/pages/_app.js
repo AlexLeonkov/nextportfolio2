@@ -29,6 +29,8 @@ export default function App({ Component, pageProps }) {
   //   };
   // }, [router.events]);
 
+
+  //check
   return (
     <div>
       <Header setClicked={setClicked} clicked={clicked}>
