@@ -1,6 +1,7 @@
 import "@component/styles/globals.css";
 import "antd/dist/reset.css";
 
+import Layout from "../components/layout";
 // import Font Awesome CSS
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
@@ -29,13 +30,12 @@ export default function App({ Component, pageProps }) {
   //   };
   // }, [router.events]);
 
-
   //check
   return (
     <div>
-      <Header setClicked={setClicked} clicked={clicked}>
+      <Layout>
         <Component {...pageProps} />
-      </Header>
+      </Layout>
     </div>
   );
 }

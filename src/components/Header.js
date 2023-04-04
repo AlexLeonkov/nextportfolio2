@@ -4,24 +4,22 @@ import styles from "./Header.module.css";
 import HeaderMobile from "./HeaderMobile/HeaderMobile";
 import Router, { useRouter } from "next/router";
 import { useClickState } from "@component/Hooks/useClickState";
+import Head from "next/head";
 
 function Header({ children }) {
   const [isMobile, setIsMobile] = useState(false);
   const [clicked, clickHandler, closeHandler] = useClickState(false);
-
-  
 
   function handleReload() {
     // window.location.reload(false);
   }
 
   useEffect(() => {
-   
     window.innerWidth <= 500 ? setIsMobile(true) : setIsMobile(false);
   }, []);
 
   return isMobile ? (
-    <HeaderMobile>{children}</HeaderMobile>
+    <HeaderMobile />
   ) : (
     <div id="top">
       <div className={styles.header}>
