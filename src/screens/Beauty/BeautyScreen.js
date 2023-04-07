@@ -13,16 +13,20 @@ import {
   faCircleXmark,
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
-import { useClickState } from "@component/Hooks/useClickState.js";
+
 import { useRouter } from "next/router.js";
+import { useGalery } from "@component/providers/GaleryProvider.js";
 
 function BeautyScreen() {
-  const [clicked, clickHandler, closeHandler] = useClickState();
+  const { isOneImageMode, setIsOneImageMode } = useGalery();
   const [id, setId] = useState(null);
   const [height, setHeight] = useState(720);
+
   const handleCLick = (id) => {
-    clickHandler();
+    console.log("clicked");
+    setIsOneImageMode(true);
     setId(id);
+    console.log(isOneImageMode);
   };
 
   const ref = useRef(null);
@@ -84,7 +88,7 @@ function BeautyScreen() {
 
   return (
     <div tabIndex={-1} ref={ref} onKeyDown={handleKeyDown}>
-      {clicked && (
+      {isOneImageMode && (
         <div className={styles.imageContainer}>
           <FontAwesomeIcon
             size="2xl"
@@ -94,7 +98,7 @@ function BeautyScreen() {
             icon={faArrowLeft}
           />
 
-          <div onClick={closeHandler}>
+          <div onClick={() => setIsOneImageMode(false)}>
             <FontAwesomeIcon className={styles.closeIcon} icon={faXmark} />
           </div>
           <Image
@@ -125,7 +129,7 @@ function BeautyScreen() {
         </div>
       )}
 
-      {!clicked && (
+      {!isOneImageMode && (
         <div className={styles.photoGrid}>
           {photos.map((photo) => (
             <div className={styles.photoContainer} key={photo.id}>

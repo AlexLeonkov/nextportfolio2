@@ -3,15 +3,15 @@ import Link from "next/link";
 import styles from "./Header.module.css";
 import HeaderMobile from "./HeaderMobile/HeaderMobile";
 import Router, { useRouter } from "next/router";
-import { useClickState } from "@component/Hooks/useClickState";
+
 import Head from "next/head";
+import { useGalery } from "@component/providers/GaleryProvider";
 
 function Header({ children }) {
   const [isMobile, setIsMobile] = useState(false);
-  const [clicked, clickHandler, closeHandler] = useClickState(false);
-
+  const { isOneImageMode, setIsOneImageMode } = useGalery();
   function handleReload() {
-    // window.location.reload(false);
+    closeHandler();
   }
 
   useEffect(() => {
@@ -21,10 +21,14 @@ function Header({ children }) {
   return isMobile ? (
     <HeaderMobile />
   ) : (
-    <div >
+    <div>
       <div className={styles.header}>
         <div className={styles.header_left}>
-          <Link onClick={handleReload} className={styles.logo} href="/">
+          <Link
+            onClick={() =>setIsOneImageMode(false)}
+            className={styles.logo}
+            href="/"
+          >
             HHEY.PHOTOGRAPHY STUDIO
           </Link>
         </div>

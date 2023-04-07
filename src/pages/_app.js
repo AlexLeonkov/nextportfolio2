@@ -9,6 +9,8 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import Header from "@component/components/Header";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import { GaleryProvider } from "@component/providers/GaleryProvider";
+// import { GaleryProvider } from "@component/providers/galeryProvider";
 
 // Tell Font Awesome to skip adding the CSS automatically
 // since it's already imported above
@@ -17,6 +19,7 @@ config.autoAddCss = false;
 export default function App({ Component, pageProps }) {
   const [clicked, setClicked] = useState(false);
   const router = useRouter();
+
   useEffect(() => {
     const handleRouteChange = (url) => {
       window.scrollTo(0, 0);
@@ -32,8 +35,10 @@ export default function App({ Component, pageProps }) {
 
   //check
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <GaleryProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </GaleryProvider>
   );
 }
