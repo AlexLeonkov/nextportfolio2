@@ -14,7 +14,7 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 
-import { useRouter } from "next/router.js";
+
 import { useGalery } from "@component/providers/GaleryProvider.js";
 
 function BeautyScreen() {
@@ -23,19 +23,15 @@ function BeautyScreen() {
   const [height, setHeight] = useState(720);
 
   const handleCLick = (id) => {
-    console.log("clicked");
     setIsOneImageMode(true);
     setId(id);
-    console.log(isOneImageMode);
   };
 
   const ref = useRef(null);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
     ref.current.focus();
     setHeight(screen.height * 0.8);
-    console.log(screen.height);
   }, []);
 
   const handleKeyDown = (e) => {
