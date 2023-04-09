@@ -87,7 +87,7 @@ function BeautyScreen() {
   };
 
   return (
-    <div tabIndex={-1} ref={ref} onKeyDown={handleKeyDown}>
+    <section tabIndex={-1} ref={ref} onKeyDown={handleKeyDown}>
       {isOneImageMode && (
         <div className={styles.imageContainer}>
           <FontAwesomeIcon
@@ -111,13 +111,6 @@ function BeautyScreen() {
             src={`/beauty/${id}.jpg`}
             alt={id}
           />
-          {/* <div
-            style={{
-              height: "10px",
-              position: "absolute",
-              bottom: "0",
-            }}
-          ></div> */}
 
           <FontAwesomeIcon
             className={styles.rightArrow}
@@ -143,7 +136,7 @@ function BeautyScreen() {
           ))}
         </div>
       )}
-    </div>
+    </section>
   );
 }
 

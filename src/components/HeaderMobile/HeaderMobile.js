@@ -23,12 +23,10 @@ function HeaderMobile() {
     setMenuOpen(false);
   }
 
-
-
   return (
     <>
       <header className={styles.header}>
-        <Link  href="/">HHEY.PHOTOGRAPHY STUDIO</Link>
+        <Link href="/">HHEY.PHOTOGRAPHY STUDIO</Link>
 
         {!menuOpen && (
           <MenuOutlined
@@ -86,7 +84,6 @@ function HeaderMobile() {
           </div>
         </div>
       </div>
-    
     </>
   );
 }

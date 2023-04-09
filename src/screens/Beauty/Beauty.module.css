@@ -12,10 +12,10 @@
 }
 .oneImage {
   margin-bottom: 10px;
- 
+  
 }
 
-.rightArrow{
+.rightArrow {
   position: absolute;
   right: 5%;
   top: 50%;
@@ -24,7 +24,7 @@
   color: #000000;
 }
 
-.leftArrow{
+.leftArrow {
   position: absolute;
   left: 5%;
   top: 50%;
