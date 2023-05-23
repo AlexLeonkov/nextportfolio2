@@ -203,15 +203,15 @@ const BookingScreen = () => {
             options={[
               {
                 value: 1,
-                label: "1500 - 2000",
+                label: "1500€ - 3000€",
               },
               {
                 value: 2,
-                label: "2000 - 5000",
+                label: "3000€ - 5000€",
               },
               {
                 value: 3,
-                label: "> 5000",
+                label: "> 5000€",
               },
             ]}
           />
