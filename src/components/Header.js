@@ -34,8 +34,7 @@ function Header({ children }) {
         </div>
         <div className={styles.header_right}>
           <Link href="/beauty">BEAUTY</Link>
-          <Link href="/food">FOOD</Link>
-          <Link href="/info">BIO</Link>
+          <Link href="/info">INFO</Link>
           <Link href="/booking">BOOKING</Link>
           <Link href="/faq">FAQs</Link>
         </div>

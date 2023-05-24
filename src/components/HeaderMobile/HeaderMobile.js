@@ -11,7 +11,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
-import { faPinterestP } from "@fortawesome/free-brands-svg-icons";
+import { faPinterestP, faBehance } from "@fortawesome/free-brands-svg-icons";
 function HeaderMobile() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -51,11 +51,8 @@ function HeaderMobile() {
           <Link href="/beauty" onClick={handleCloseClick}>
             BEAUTY
           </Link>
-          <Link href="/food" onClick={handleCloseClick}>
-            FOOD
-          </Link>
           <Link href="/info" onClick={handleCloseClick}>
-            BIO
+            INFO
           </Link>
           <Link href="/booking" onClick={handleCloseClick}>
             BOOKING
@@ -65,21 +62,29 @@ function HeaderMobile() {
           </Link>
 
           <div className={styles.socialIcons}>
-            <a className={styles.socialIcon} href="https://pin.it/72jZOCn/">
-              <FontAwesomeIcon icon={faPinterestP} />
-            </a>
-
             <a
               className={styles.socialIcon}
               href="https://www.instagram.com/hhey.photography/"
             >
               <InstagramOutlined />
             </a>
+
             <a
               className={styles.socialIcon}
               href="https://www.linkedin.com/company/hhey-photography-studio/"
             >
               <LinkedinOutlined />
+            </a>
+
+            <a
+              className={styles.socialIcon}
+              href="https://www.behance.net/elenasmolyuk/"
+            >
+              <FontAwesomeIcon icon={faBehance} />
+            </a>
+
+            <a className={styles.socialIcon} href="https://pin.it/72jZOCn/">
+              <FontAwesomeIcon icon={faPinterestP} />
             </a>
           </div>
         </div>
