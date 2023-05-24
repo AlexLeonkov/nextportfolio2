@@ -14,7 +14,6 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 
-
 import { useGalery } from "@component/providers/GaleryProvider.js";
 
 function BeautyScreen() {
@@ -123,6 +122,7 @@ function BeautyScreen() {
           {photos.map((photo) => (
             <div className={styles.photoContainer} key={photo.id}>
               <Image
+                className={styles.photo}
                 onClick={() => handleCLick(photo.id)}
                 src={photo.src}
                 alt={photo.alt}
