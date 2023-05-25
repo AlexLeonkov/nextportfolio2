@@ -77,12 +77,15 @@ const BookingScreen = () => {
   };
 
   return (
-    <>
+    <div className={styles.booking}>
       <h2 className={styles.h2}>HOW TO BOOK A SHOOTING?</h2>
       <h3 className={styles.h3}>
-        We’ve prepared some basic questions to know more about your
-        brand/business. <br></br>Please take time to fill in the form below and
-        we will get back to you within 48 hours.
+        To request a booking, please take a moment to fill out our questionnaire
+        below. It will help us understand the scope, ideas and deadlines of your
+        project. We will get back to you within 48 hours with a response and an
+        approximate fee. Remember to fill out all the required fields and
+        provide as much information as possible to receive a more accurate cost
+        estimate.
       </h3>
       <Form onFinish={onFinish} className={styles.wrapper}>
         <div className={styles.one}>
@@ -134,11 +137,11 @@ const BookingScreen = () => {
           <Input
             style={{
               borderRadius: "0",
-              fontFamily: "Baskerville",
+              fontFamily: "Arial",
             }}
             onChange={handleOnChange}
             value={inputs.photoType}
-            placeholder="Minimalistic / creative"
+            placeholder="Creative / minimalistic"
             id="photoType"
           />
         </div>
@@ -168,6 +171,7 @@ const BookingScreen = () => {
         <div className={styles.eight}>
           <p className={styles.p}>What ideas do you have in mind?</p>
           <Input
+            className={styles.input}
             style={{
               borderRadius: "0",
             }}
@@ -203,14 +207,10 @@ const BookingScreen = () => {
             options={[
               {
                 value: 1,
-                label: "1500€ - 3000€",
+                label: "2000€ - 5000€",
               },
               {
                 value: 2,
-                label: "3000€ - 5000€",
-              },
-              {
-                value: 3,
                 label: "> 5000€",
               },
             ]}
@@ -231,7 +231,7 @@ const BookingScreen = () => {
         </div>
 
         <Button className={styles.twelve} type="primary" htmlType="submit">
-          Submit
+          Send
         </Button>
       </Form>
 
@@ -252,7 +252,7 @@ const BookingScreen = () => {
         If you have any further questions please contact me via e-mail
         <b>hello@hheyphotography.com</b>
       </h4> */}
-    </>
+    </div>
   );
 };
 

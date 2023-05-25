@@ -5,7 +5,7 @@
   font-variant: tabular-nums;
   line-height: 1.5715;
   width: 40%;
-  height: 100%;
+  height: 90vh;
   display: flex;
   align-items: center;
   margin: -100px auto auto;
@@ -13,6 +13,7 @@
   text-align: center;
   display: block;
   margin-top: 10px;
+  position: relative;
 }
 .a {
   color: black; /* changes the color of the link text */
@@ -52,6 +53,7 @@
 
 .footerInfo{
   position: absolute ;
+  margin-top: 10px !important;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -61,8 +63,52 @@
  
 }
 
+@media screen and (max-width: 1000px) {
+  .about {
+    width: 81%;
+  }
+
+  .footerInfo{
+    bottom: -170px;
+  }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .about {
+    width: 81%;
+  }
+
+  .footerInfo{
+    bottom: -100px;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
   .about {
     width: 81%;
   }
+
+  .footerInfo{
+    bottom: -150px;
+  }
 }
+
+
+@media screen and (max-width: 400px) {
+  .about {
+    width: 81%;
+  }
+
+  .footerInfo{
+    bottom: -250px;
+  }
+}
+
+
+
+
+
+
