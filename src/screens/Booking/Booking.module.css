@@ -161,4 +161,11 @@
   .button {
     margin-top: 0px;
   }
+  .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven {
+  margin-bottom: 14px;
+  }
+
+  .p{
+    margin-bottom: 0px
+  }
 }
