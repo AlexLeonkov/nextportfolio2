@@ -7,7 +7,7 @@ function Photo({photo}) {
     <div className={styles.wrapper}>
       <div className={styles.container}>
      
-          {/* <Image className={styles.photo} src={photos[1].src} alt={photos[0].alt} width="100%" height="100%" /> */}
+          {/* <Image className={styles.photo} src={photos[1].src} alt={photos[0].alt} fill/> */}
        
      <img className={styles.photo} src={photos[1].src} alt="1"></img>
 
