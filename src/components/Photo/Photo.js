@@ -9,7 +9,7 @@ function Photo({photo}) {
      
           {/* <Image className={styles.photo} src={photos[1].src} alt={photos[0].alt} width="100%" height="100%" /> */}
        
-     <img className={styles.photo} src={photos[1].src}></img>
+     <img className={styles.photo} src={photos[1].src} alt="1"></img>
 
     
       </div>
