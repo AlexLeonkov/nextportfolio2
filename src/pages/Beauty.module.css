@@ -11,7 +11,7 @@
  
   column-count: 5;
   column-gap: 5px;
-  max-width: 1260px;
+  max-width: 1920px;
   margin: 0 auto;
   height: 100%;
 }
@@ -25,26 +25,26 @@
   }
 }
 
-@media (min-width: 756px) and (max-width: 1007px) {
+ @media (min-width: 756px) and (max-width: 1007px) {
   .container {
     max-width: 756px;
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1008px) and (max-width: 1499px) {
+  .container {
+    max-width: 1100px;
     column-count: 3;
   }
 }
 
-@media (min-width: 1008px) and (max-width: 1259px) {
+@media (min-width: 1500px) and (max-width: 1800px) {
   .container {
-    max-width: 1008px;
+    max-width: 1400px;
     column-count: 4;
   }
-}
-
-@media (min-width: 1260px) and (max-width: 1511px) {
-  .container {
-    max-width: 1260px;
-    column-count: 5;
-  }
-}
+} 
 
 
 
