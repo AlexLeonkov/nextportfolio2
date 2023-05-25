@@ -1,20 +1,27 @@
 .wrapper {
-  display: inline-flex !important;
+  display: inline-flex;
   padding: 8px;
 }
 
 .container {
-  position: relative;
-  display: flex !important;
-  align-items: center !important;
-  box-sizing: border-box !important;
+
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
   cursor: pointer;
-  width: 236px !important;
+  width: 236px;
 }
 
 .photo {
-  display: flex !important;
-  width: 100% !important;
+  display: flex;
+  width: 100%;
   border-radius: 10px;
   object-fit: cover;
+  cursor: zoom-in;
 }
+
+@media (min-width: 0px) and (max-width: 755px) {
+    .container {
+     width: 100%;
+    }
+  }

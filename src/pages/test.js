@@ -28,8 +28,10 @@ function BeautyScreen() {
 
   return (
     <div className={styles.wrapper}>
-    <div className={styles.container}>
-      <Photo/>
+      <div className={styles.container}>
+        {photos.map((photo) => (
+          <Photo src={photo.src} alt={photo.alt} id={photo.id} />
+        ))}
       </div>
     </div>
   );
