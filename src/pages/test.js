@@ -5,7 +5,6 @@ import styles from "./Beauty.module.css";
 
 //import Header from "../layout/header";
 
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowLeft,
@@ -15,6 +14,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { useGalery } from "@component/providers/GaleryProvider.js";
+import Photo from "@component/components/Photo/Photo.js";
 
 function BeautyScreen() {
   const { isOneImageMode, setIsOneImageMode } = useGalery();
@@ -26,113 +26,12 @@ function BeautyScreen() {
     setId(id);
   };
 
-  const ref = useRef(null);
-
-  useEffect(() => {
-    ref.current.focus();
-    setHeight(screen.height * 0.8);
-  }, []);
-
-  const handleKeyDown = (e) => {
-    console.log(e);
-    if (e.key === "ArrowRight") {
-      handleNextImage();
-    } else if (e.key === "ArrowLeft") {
-      handlePreviousImage();
-    }
-  };
-
-  const handleNextImage = () => {
-    let nextId = id + 1;
-
-    if (nextId === 8) {
-      setId(9);
-      return;
-    }
-
-    if (nextId === 31) {
-      setId(30);
-      return;
-    }
-    if (nextId > photos.length) {
-      setId(photos.length);
-    } else {
-      setId(nextId);
-    }
-  };
-
-  const handlePreviousImage = () => {
-    let previousId = id - 1;
-
-    if (previousId === 8) {
-      setId(7);
-      return;
-    }
-
-    if (previousId === 31) {
-      setId(30);
-      return;
-    }
-
-    if (previousId < 1) {
-      setId(1);
-    } else {
-      setId(previousId);
-    }
-  };
-
   return (
-    <section tabIndex={-1} ref={ref} onKeyDown={handleKeyDown}>
-      {isOneImageMode && (
-        <div className={styles.imageContainer}>
-          <FontAwesomeIcon
-            size="2xl"
-            className={styles.leftArrow}
-            onKeyDown={handleKeyDown}
-            onClick={handlePreviousImage}
-            icon={faArrowLeft}
-          />
-
-          <div onClick={() => setIsOneImageMode(false)}>
-            <FontAwesomeIcon className={styles.closeIcon} icon={faXmark} />
-          </div>
-          <Image
-            className={styles.oneImage}
-            width={height / 1.25}
-            height={height}
-            style={{
-              zIndex: 100,
-            }}
-            src={`/beauty/${id}.jpg`}
-            alt={id}
-          />
-
-          <FontAwesomeIcon
-            className={styles.rightArrow}
-            onKeyDown={handleKeyDown}
-            onClick={handleNextImage}
-            icon={faArrowRight}
-            size="2xl"
-          />
-        </div>
-      )}
-
-      {!isOneImageMode && (
-        <div className={styles.photoGrid}>
-          {photos.map((photo) => (
-            <div className={styles.photoContainer} key={photo.id}>
-              <Image
-                className={styles.photo}
-                onClick={() => handleCLick(photo.id)}
-                src={photo.src}
-                alt={photo.alt}
-                fill
-              />
-            </div>
-          ))}
-        </div>
-      )}
-    </section>
+    <div className={styles.wrapper}>
+    <div className={styles.container}>
+      <Photo/>
+      </div>
+    </div>
   );
 }
 

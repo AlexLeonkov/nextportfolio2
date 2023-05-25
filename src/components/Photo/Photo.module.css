@@ -1,0 +1,19 @@
+.wrapper {
+  display: inline-flex !important;
+  padding: 8px;
+}
+
+.container {
+  display: flex !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+  cursor: pointer;
+  width: 236px !important;
+}
+
+.photo {
+  display: flex !important;
+  width: 100% !important;
+  border-radius: 10px;
+  object-fit: cover;
+}
