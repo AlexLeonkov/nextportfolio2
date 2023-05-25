@@ -11,7 +11,7 @@ import { faPinterestP, faBehance } from "@fortawesome/free-brands-svg-icons";
 
 const InfoScreen = () => {
   return (
-    <>
+
       <div className={styles.about}>
         <p>
           Lena is a professional commercial product photographer based in
@@ -30,7 +30,7 @@ const InfoScreen = () => {
           that beautifully showcase the delicate essence of each brand in a
           compelling way.
         </p>
-        <p>
+        <p className={styles.h3}>
           <strong>LOCATION:</strong>
         </p>
 
@@ -38,11 +38,11 @@ const InfoScreen = () => {
           <p>European Union</p>
           <p className={styles.location}>Berlin, Germany</p>
         </div>
-        <p>
+        <p className={styles.h3}>
           <strong> EMAIL:</strong>
         </p>
         <p className={styles.infoTextUp}>hello@hheyphotography.com</p>
-        <p>
+        <p className={styles.h3}>
           <strong> BOOKING:</strong>
         </p>
         <p className={styles.infoTextUp}>
@@ -52,12 +52,12 @@ const InfoScreen = () => {
           </a>{" "}
           and <br></br>fill out the questionnaire on the booking page.
         </p>
-        <p>
+        <p className={styles.h3}>
           <strong> OPEN HOURS:</strong>
         </p>
         <p className={styles.infoTextUp}>Monday - Friday</p>
         <p className={styles.infoTextUp}> 10:00 - 18:00</p>
-        <p>
+        <p className={styles.h3}>
           <strong>CONTACT:</strong>
         </p>
 
@@ -86,12 +86,14 @@ const InfoScreen = () => {
           <a className={styles.socialIcon} href="https://pin.it/72jZOCn/">
             <FontAwesomeIcon icon={faPinterestP} />
           </a>
-        </div>
-        <h3 className={styles.footerInfo}>
+
+          <h3 className={styles.footerInfo}>
           <strong> All Images © Smoliuk Elena 2023</strong>
         </h3>
+        </div>
+        
       </div>
-    </>
+   
   );
 };
 
