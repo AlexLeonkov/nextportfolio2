@@ -23,7 +23,7 @@ const InfoScreen = () => {
         with restaurants in the gastronomy industry.
       </p>
       <p>
-        Today, Lena's main focus is on cosmetics photography, where she strives
+        Today, Lena&aposs main focus is on cosmetics photography, where she strives
         to make a significant contribution to the advertising of beauty brands.
         Her style is characterised by clean and concise images that beautifully
         showcase the delicate essence of each brand in a compelling way.
