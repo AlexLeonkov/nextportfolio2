@@ -119,6 +119,7 @@ const BookingScreen = () => {
             onChange={handleOnChange}
             value={inputs.brandInfo}
             id="brandInfo"
+            placeholder="Please introduce your brand, philosophy and audience."
           />
         </div>
         <div className={styles.four}>
