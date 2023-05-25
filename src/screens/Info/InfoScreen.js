@@ -23,10 +23,11 @@ const InfoScreen = () => {
         with restaurants in the gastronomy industry.
       </p>
       <p>
-        Today, Lena&aposs main focus is on cosmetics photography, where she strives
-        to make a significant contribution to the advertising of beauty brands.
-        Her style is characterised by clean and concise images that beautifully
-        showcase the delicate essence of each brand in a compelling way.
+        Today, Lena<span>&#39;</span>s main focus is on cosmetics photography,
+        where she strives to make a significant contribution to the advertising
+        of beauty brands. Her style is characterised by clean and concise images
+        that beautifully showcase the delicate essence of each brand in a
+        compelling way.
       </p>
       <p className={styles.h3}>
         <strong>LOCATION:</strong>
@@ -39,7 +40,15 @@ const InfoScreen = () => {
       <p className={styles.h3}>
         <strong> EMAIL:</strong>
       </p>
-      <p className={styles.infoTextUp}>hello@hheyphotography.com</p>
+      <p className={styles.infoTextUp}>
+        <a
+          className={styles.a}
+          href="mailto:hello@hheyphotography.com"
+        >
+          <b>hello@hheyphotography.com</b>
+        </a>
+      </p>
+
       <p className={styles.h3}>
         <strong> BOOKING:</strong>
       </p>
@@ -48,7 +57,8 @@ const InfoScreen = () => {
         <Link className={styles.a} href="/booking">
           here
         </Link>
-        and <br></br>fill out the questionnaire on the booking page.
+        <br></br>
+        and fill out the questionnaire on the booking page.
       </p>
       <p className={styles.h3}>
         <strong> OPEN HOURS:</strong>

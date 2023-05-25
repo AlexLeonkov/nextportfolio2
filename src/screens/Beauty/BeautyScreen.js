@@ -43,39 +43,20 @@ function BeautyScreen() {
   };
 
   const handleNextImage = () => {
-    let nextId = id + 1;
+    let nextId = id - 1;
 
-    if (nextId === 8) {
-      setId(9);
-      return;
-    }
-
-    if (nextId === 31) {
-      setId(30);
-      return;
-    }
-    if (nextId > photos.length) {
-      setId(photos.length);
+    if (nextId < 1) {
+      setId(1);
     } else {
       setId(nextId);
     }
   };
 
   const handlePreviousImage = () => {
-    let previousId = id - 1;
+    let previousId = id + 1;
 
-    if (previousId === 8) {
-      setId(7);
-      return;
-    }
-
-    if (previousId === 31) {
-      setId(30);
-      return;
-    }
-
-    if (previousId < 1) {
-      setId(1);
+    if (previousId > photos.length ) {
+      setId(photos.length);
     } else {
       setId(previousId);
     }
@@ -98,12 +79,11 @@ function BeautyScreen() {
           </div>
           <Image
             className={styles.oneImage}
-            width={height / 1.25}
-            height={height}
+            fill
             style={{
               zIndex: 100,
             }}
-            src={`/beauty/${id}.jpg`}
+            src={`/newBeauty/${id}.jpg`}
             alt={id}
           />
 

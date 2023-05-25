@@ -243,7 +243,7 @@ const BookingScreen = () => {
         </a>
         <div
           style={{
-            height: "15px",
+            height: "30px",
           }}
         ></div>
       </h3>

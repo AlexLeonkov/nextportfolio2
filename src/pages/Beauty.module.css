@@ -1,0 +1,90 @@
+.photoGrid {
+  width: 90%;
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+}
+.oneImage {
+  margin-bottom: 10px;
+}
+
+.rightArrow {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #000000;
+}
+
+.leftArrow {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #000000;
+}
+
+/* .oneImage {
+  margin-bottom: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
+.photoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  column-count: 5;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.photoContainer > :global(img) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo {
+  cursor: pointer;
+  display: inline-flex;
+}
+
+.photo:hover {
+  opacity: 0.4;
+}
+
+.closeIcon {
+  position: absolute;
+  right: 4%;
+  color: "#000000";
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .photoGrid {
+    display: block;
+    width: 100%;
+    pointer-events: none;
+  }
+
+  .photo {
+    cursor: auto;
+  }
+  .photo:hover {
+    opacity: 1;
+  }
+}

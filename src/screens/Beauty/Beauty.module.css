@@ -1,7 +1,7 @@
 .photoGrid {
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 5px;
   margin: auto;
 }
@@ -9,9 +9,13 @@
 .imageContainer {
   display: flex;
   justify-content: center;
+  
 }
 .oneImage {
   margin-bottom: 10px;
+  margin: auto !important;
+  height: 85% !important;
+  width: auto !important;
 }
 
 .rightArrow {
