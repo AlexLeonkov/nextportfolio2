@@ -60,38 +60,34 @@ const InfoScreen = () => {
       </p>
 
       <div className={styles.socialIcons}>
-        <a
+        <Link
           className={styles.socialIcon}
           href="https://www.instagram.com/hhey.photography/"
         >
           <InstagramOutlined />
-        </a>
+        </Link>
 
-        <a
+        <Link
           className={styles.socialIcon}
           href="https://www.linkedin.com/company/hhey-photography-studio/"
         >
           <LinkedinOutlined />
-        </a>
+        </Link>
 
-        <a
+        <Link
           className={styles.socialIcon}
           href="https://www.behance.net/elenasmolyuk/"
         >
           <FontAwesomeIcon icon={faBehance} />
-        </a>
+        </Link>
 
-        <a className={styles.socialIcon} href="https://pin.it/72jZOCn/">
+        <Link className={styles.socialIcon} href="https://pin.it/72jZOCn/">
           <FontAwesomeIcon icon={faPinterestP} />
-        </a>
-
-      
+        </Link>
       </div>
       <h3 className={styles.footerInfo}>
-          <strong> All Images © Smoliuk Elena 2023</strong>
-        </h3>
-
-
+        <strong> All Images © Smoliuk Elena 2023</strong>
+      </h3>
     </div>
   );
 };
