@@ -1,6 +1,7 @@
 .wrapper {
   background-color: white;
   display: flex;
+
   width: 100%;
   height: 100%;
   margin-top: 15px;
@@ -8,15 +9,12 @@
 }
 
 .container {
- 
   column-count: 5;
-  column-gap: 5px;
+  column-gap: 0px;
   max-width: 1920px;
   margin: 0 auto;
   height: 100%;
 }
-
-
 
 @media (min-width: 0px) and (max-width: 755px) {
   .container {
@@ -25,7 +23,7 @@
   }
 }
 
- @media (min-width: 756px) and (max-width: 1007px) {
+@media (min-width: 756px) and (max-width: 1007px) {
   .container {
     max-width: 756px;
     column-count: 2;
@@ -44,9 +42,4 @@
     max-width: 1400px;
     column-count: 4;
   }
-} 
-
-
-
-
-  
+}
