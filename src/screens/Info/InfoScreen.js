@@ -13,6 +13,8 @@ import Link from "next/link";
 const InfoScreen = () => {
   return (
     <div className={styles.about}>
+
+      <div className={styles.bio}>
       <p>
         Lena is a professional commercial product photographer based in Germany,
         specialising in advertising shoots for cosmetics and beauty brands.
@@ -29,6 +31,10 @@ const InfoScreen = () => {
         that beautifully showcase the delicate essence of each brand in a
         compelling way.
       </p>
+
+
+      </div>
+     
       <p className={styles.h3}>
         <strong>LOCATION:</strong>
       </p>

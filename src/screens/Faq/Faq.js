@@ -40,12 +40,12 @@ const Faqscreen = () => {
     {
       question: "How far in advance should I contact you for booking?",
       answer:
-        "We recommend booking a shoot at least one month in advance, but this may vary depending on the season and upcoming holidays (such as New Year, February 14th, and the Summer season). If you have a limited timeframe and require your photos earlier, an extra fee will be added to the final price.",
+        "We recommend booking a shoot at least one month in advance. However, please note that this timeframe may be subject to change depending on the season and upcoming holidays, such as New Year's, February 14th, and the summer season.",
     },
     {
       question: "How long does a project take?",
       answer:
-        "Typically, the entire process from discussing your project to delivering the final images takes 15-21 business days. If you have a limited timeframe and require your photos earlier, an extra fee will be added to the final price.",
+        "Typically, the entire process from discussing your project to delivering the final images takes 21-30 business days.",
     },
     {
       question: "What payment methods do you accept?",
@@ -70,7 +70,7 @@ const Faqscreen = () => {
     {
       question: "WHAT PHOTO LICENSING CAN I GET?",
       answer:
-        "You always have rights to use my images on your website and social media. To use them for other purposes (advertising, magazines, posters) you have to buy rights to the photos.",
+        "You always have rights to use images on your website and social media. However, if you intend to employ them for other purposes, such as advertising, magazines, or posters, it is necessary to acquire the rights to the photos through a purchase.",
     },
   ];
 

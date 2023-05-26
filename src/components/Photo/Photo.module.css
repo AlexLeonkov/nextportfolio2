@@ -1,31 +1,36 @@
 .wrapper {
   display: inline-flex;
-
 }
 
 .container {
-
   display: flex;
   align-items: center;
   box-sizing: border-box;
   cursor: pointer;
-  width: 330px;
+  width: 380px;
 }
 
 .photo {
   display: flex;
   width: 100%;
-  
+
   object-fit: cover;
   cursor: zoom-in;
 }
 
 .photo:hover {
-    opacity: 0.4;
-  }
+  opacity: 0.4;
+}
 
 @media (min-width: 0px) and (max-width: 755px) {
-    .container {
-     width: 100%;
-    }
+  .container {
+    width: 100%;
+    pointer-events: none;
   }
+}
+
+@media (min-width: 1500px) and (max-width: 1800px) {
+  .container {
+    width: 277px;
+  }
+}
