@@ -9,17 +9,19 @@
   width: 100%;
 }
 
-
 .column img:hover {
   opacity: 0.4;
   cursor: zoom-in;
 }
 
-
 @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
     max-width: 50%;
+  }
+
+  .column img:hover {
+    opacity: 1;
   }
 }
 
