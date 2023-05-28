@@ -52,9 +52,9 @@ export const newPhotos = {
       height: 1350,
     },
     {
-      id: 27,
-      src: "/newBeauty/27.jpg",
-      alt: "Photo 27",
+      id: 21,
+      src: "/newBeauty/21.jpg",
+      alt: "Photo 21",
       width: 1080,
       height: 1350,
     },
@@ -100,9 +100,9 @@ export const newPhotos = {
   ],
   column3: [
     {
-      id: 21,
-      src: "/newBeauty/21.jpg",
-      alt: "Photo 21",
+      id: 34,
+      src: "/newBeauty/34.jpg",
+      alt: "Photo ",
       width: 1080,
       height: 1350,
     },
@@ -262,9 +262,9 @@ export const PhotosMobile = {
       alt: "Photo 33",
     },
     {
-      id: 27,
-      src: "/newBeauty/27.jpg",
-      alt: "Photo 27",
+      id: 34,
+      src: "/newBeauty/34.jpg",
+      alt: "Photo 34",
     },
     {
       id: 21,
