@@ -107,9 +107,9 @@ export const newPhotos = {
       height: 1350,
     },
     {
-      id: 27,
-      src: "/newBeauty/27.jpg",
-      alt: "Photo 27",
+      id: 21,
+      src: "/newBeauty/21.jpg",
+      alt: "Photo 21",
       width: 1080,
       height: 1350,
     },
