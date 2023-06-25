@@ -55,11 +55,11 @@ function HeaderMobile() {
             INFO
           </Link>
           <Link href="/booking" onClick={handleCloseClick}>
-            BOOKING
+            CONTACT
           </Link>
-          <Link href="/faq" onClick={handleCloseClick}>
+          {/* <Link href="/faq" onClick={handleCloseClick}>
             FAQs
-          </Link>
+          </Link> */}
 
           <div className={styles.socialIcons}>
             <a

@@ -7,7 +7,8 @@ import { Button, DatePicker, Form, Input, message, Select } from "antd";
 import Header from "../../components/Header";
 import { handleClientScriptLoad } from "next/script";
 import clsx from "clsx";
-[];
+
+const { TextArea } = Input;
 
 const BookingScreen = () => {
   const [deadLineDate, setDeadlineDate] = useState("");
@@ -78,18 +79,17 @@ const BookingScreen = () => {
 
   return (
     <div className={styles.booking}>
-      <h2 className={styles.h2}>HOW TO BOOK A SHOOTING?</h2>
+      {/* <h2 className={styles.h2}>HOW TO BOOK A SHOOTING?</h2> */}
       <h3 className={styles.h3}>
-        To request a booking, please take a moment to fill out our questionnaire
-        below. It will help us understand the scope, ideas and deadlines of your
-        project. We will get back to you within 48 hours with a response and an
-        approximate fee. Remember to fill out all the required fields and
-        provide as much information as possible to receive a more accurate cost
-        estimate.
+        For booking requirements please fill out the form below. We will get
+        back to you within 48 hours with a response.
       </h3>
       <Form onFinish={onFinish} className={styles.wrapper}>
         <div className={styles.one}>
-          <p className={styles.p}>Your full name</p>
+          <p className={styles.p}>
+            <strong>First Name</strong> <i>(required)</i>
+          </p>
+
           <Input
             style={{
               borderRadius: "0",
@@ -100,7 +100,9 @@ const BookingScreen = () => {
           />
         </div>
         <div className={styles.two}>
-          <p className={styles.p}>Your e-mail address</p>
+          <p className={styles.p}>
+            <strong>Last Name</strong>
+          </p>
           <Input
             style={{
               borderRadius: "0",
@@ -111,7 +113,9 @@ const BookingScreen = () => {
           />
         </div>
         <div className={styles.three}>
-          <p className={styles.p}>What is your brand/business about?</p>
+          <p className={styles.p}>
+            <strong>Email</strong> <i>(required)</i>
+          </p>
           <Input
             style={{
               borderRadius: "0",
@@ -119,11 +123,12 @@ const BookingScreen = () => {
             onChange={handleOnChange}
             value={inputs.brandInfo}
             id="brandInfo"
-            placeholder="Please introduce your brand, philosophy and audience."
           />
         </div>
         <div className={styles.four}>
-          <p className={styles.p}>Link to your website/social media</p>
+          <p className={styles.p}>
+            <strong>Company / Website</strong> <i>(required)</i>
+          </p>
           <Input
             style={{
               borderRadius: "0",
@@ -134,110 +139,29 @@ const BookingScreen = () => {
           />
         </div>
         <div className={styles.five}>
-          <p className={styles.p}>What type of photos do you need?</p>
-          <Input
+          <p className={styles.p}>
+            <strong>Message</strong> <i>(required)</i>
+          </p>
+
+          <TextArea
+            rows={4}
             style={{
               borderRadius: "0",
               fontFamily: "Arial",
             }}
             onChange={handleOnChange}
             value={inputs.photoType}
-            placeholder="Creative / minimalistic"
             id="photoType"
           />
         </div>
-        <div className={styles.six}>
-          <p className={styles.p}>What is your deadline for project?</p>
-          <DatePicker
-            style={{
-              borderRadius: "0",
-            }}
-            onChange={handleDate}
-            id="deadline"
-            className={styles.date}
-          />
-        </div>
 
-        <div className={styles.seven}>
-          <p className={styles.p}>How many photos do you need?</p>
-          <Input
-            style={{
-              borderRadius: "0",
-            }}
-            onChange={handleOnChange}
-            value={inputs.quantity}
-            id="quantity"
-          />
-        </div>
-        <div className={styles.eight}>
-          <p className={styles.p}>What ideas do you have in mind?</p>
-          <Input
-            className={styles.input}
-            style={{
-              borderRadius: "0",
-            }}
-            onChange={handleOnChange}
-            value={inputs.ideas}
-            id="ideas"
-          />
-        </div>
-        <div className={styles.nine}>
-          <p className={styles.p}>Where these photos will be used?</p>
-          <Input
-            style={{
-              borderRadius: "0",
-            }}
-            onChange={handleOnChange}
-            value={inputs.usage}
-            id="usage"
-          />
-        </div>
-        <div className={styles.ten}>
-          <p className={styles.p}>What is your budget for a shooting?</p>
-          <Select
-            style={{
-              borderRadius: "0",
-            }}
-            className={styles.select}
-            optionFilterProp="children"
-            onChange={handleBudget}
-            filterOption={(input, option) =>
-              (option?.label ?? "").toLowerCase().includes(input.toLowerCase())
-            }
-            id="budget"
-            options={[
-              {
-                value: 1,
-                label: "2000€ - 5000€",
-              },
-              {
-                value: 2,
-                label: "> 5000€",
-              },
-            ]}
-          />
-        </div>
-        <div className={styles.eleven}>
-          <p className={styles.p}>
-            Other specific information we need to know about your product brand?
-          </p>
-          <Input
-            style={{
-              borderRadius: "0",
-            }}
-            onChange={handleOnChange}
-            value={inputs.otherInfo}
-            id="otherInfo"
-          />
-        </div>
-
-        <Button className={styles.twelve} type="primary" htmlType="submit">
-          Send
-        </Button>
+        <button className={styles.twelve} htmlType="submit">
+          SUBMIT
+        </button>
       </Form>
 
       <h3 className={clsx(styles.h3, styles.button)}>
-        If you have any further questions, please contact us via e-mail:
+        If you have any further questions, please contact us at e-mail:
         <br />
         <a className={styles.a} href="mailto:hello@hheyphotography.com">
           <b style={{ marginTop: "10px" }}>hello@hheyphotography.com</b>

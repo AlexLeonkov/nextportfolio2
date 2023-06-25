@@ -3,7 +3,16 @@
 }
 
 .p {
-  font-weight: bold;
+  /* font-weight: bold; */
+  margin-bottom: 0rem;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.p i {
+  font-size: 12px;
+  font-weight: 400;
+  color: #3a3a3a;
 }
 
 .a {
@@ -51,19 +60,28 @@
 .wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 0px;
   grid-auto-rows: minmax(100px, auto);
   margin: 0 auto;
-  width: 65%;
+  width: 35%;
   align-items: center;
   justify-content: center;
   font-size: 12px;
+}
+
+.one input,
+.two input,
+.three input,
+.four input,
+.five textarea {
+  background-color: #fafafa !important;
 }
 
 .one {
   grid-column: 1 / 2;
   grid-row: 1;
   border-radius: 0 !important;
+  margin-right: 5px;
 }
 
 .two {
@@ -72,18 +90,21 @@
 }
 
 .three {
-  grid-column: 1 / 2;
+  grid-column: 1 / -1;
   grid-row: 2;
+  margin-top: -45px;
 }
 
 .four {
-  grid-column: 2 / 2;
-  grid-row: 2;
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin-top: -71px;
 }
 
 .five {
-  grid-column: 1 / 2;
-  grid-row: 3;
+  grid-column: 1 / -1;
+  grid-row: 4;
+  margin-top: -40px;
 }
 
 .six {
@@ -111,17 +132,28 @@
   grid-column: 1 / -1;
   grid-row: 6;
 }
+
 .twelve {
   grid-column: 1 / -1;
-  grid-row: 7;
+  grid-row: 5;
   width: 25%;
   align-self: center;
   justify-self: center;
-  color: black;
-  margin-top: -64px;
-  background-color: gainsboro !important;
-  border-color: gainsboro !important;
+
+  margin-top: -50px;
+  border: 1px solid #3a3a3a !important;
+  color: #ffff !important;
+  background-color: #3a3a3a !important;
   border-radius: 0 !;
+  height: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.twelve:hover {
+  background-color: transparent !important;
+  border: 1px solid #3a3a3a !important;
+  color: #3a3a3a !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .btn {
@@ -144,11 +176,10 @@
   }
 
   .twelve {
+    display: block;
+    margin: 0 auto;
     margin-top: 18px;
     margin-bottom: 13px;
-    left: 50%;
-
-    transform: translateX(-50%);
   }
 
   .h2 {
@@ -161,11 +192,22 @@
   .button {
     margin-top: 0px;
   }
-  .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven {
-  margin-bottom: 14px;
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven,
+  .eight,
+  .nine,
+  .ten,
+  .eleven {
+    margin-bottom: 14px;
+    margin-top: 0px;
   }
 
-  .p{
-    margin-bottom: 0px
+  .p {
+    margin-bottom: 0px;
   }
 }
