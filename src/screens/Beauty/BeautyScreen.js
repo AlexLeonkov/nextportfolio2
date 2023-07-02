@@ -26,18 +26,16 @@ function BeautyScreen() {
   }
 
   useEffect(() => {
-    window.innerWidth <= 500 ? setPhotosSqn(PhotosMobile) : setPhotosSqn(newPhotos);
+    // window.innerWidth <= 500 ? setPhotosSqn(PhotosMobile) : setPhotosSqn(newPhotos);
+    if (window.innerWidth <= 500) {
+      setPhotosSqn(PhotosMobile);
+    }
+    // console.log( window.innerWidth)
+    // console.log(PhotosMobile, "mobile");
+    // console.log("photosSqn", photosSqn); 
   }, []);
 
   return (
-    // <div className={styles.wrapper}>
-    //   <div className={styles.container}>
-    //     {photos.map((photo) => (
-    //       <Photo key={photo.id} src={photo.src} alt={photo.alt} id={photo.id} />
-    //     ))}
-    //   </div>
-    // </div>
-
     <div className={styles.row}>
       <Column photos={photosSqn.column1} />
       <Column photos={photosSqn.column2} />
