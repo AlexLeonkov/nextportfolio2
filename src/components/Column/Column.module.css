@@ -11,7 +11,7 @@
 
 .column img:hover {
   opacity: 0.4;
-  cursor: zoom-in;
+  
 }
 
 @media screen and (max-width: 800px) {

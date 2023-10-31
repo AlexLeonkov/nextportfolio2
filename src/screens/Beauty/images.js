@@ -1,9 +1,21 @@
 export const newPhotos = {
   column1: [
+
+    {
+      id: 53,
+      src: "/newBeauty/53.jpg",
+      alt: "Photo 53",
+    },
     {
       id: 48,
       src: "/newBeauty/48.jpg",
       alt: "Photo 48",
+    },
+
+    {
+      id: 49,
+      src: "/newBeauty/49.jpg",
+      alt: "Photo 49",
     },
 
 
@@ -56,6 +68,17 @@ export const newPhotos = {
     },
   ],
   column2: [
+
+    {
+      id: 54,
+      src: "/newBeauty/54.jpg",
+      alt: "Photo 54",
+    },
+    {
+      id: 50,
+      src: "/newBeauty/50.jpg",
+      alt: "Photo 50",
+    },
 
     {
       id: 47,
@@ -121,6 +144,12 @@ export const newPhotos = {
     },
   ],
   column3: [
+
+    {
+      id: 55,
+      src: "/newBeauty/55.jpg",
+      alt: "Photo 55",
+    },
 
     {
       id: 46,
@@ -190,6 +219,12 @@ export const newPhotos = {
     },
   ],
   column4: [
+
+    {
+      id: 51,
+      src: "/newBeauty/51.jpg",
+      alt: "Photo 51",
+    },
 
     {
       id: 45,
@@ -262,6 +297,11 @@ export const newPhotos = {
   ],
   column5: [
     {
+      id: 52,
+      src: "/newBeauty/52.jpg",
+      alt: "Photo 52",
+    },
+    {
       id: 44,
       src: "/newBeauty/44.jpg",
       alt: "Photo 44",
@@ -330,11 +370,66 @@ export const PhotosMobile = {
 
   column1: [
 
+
+    {
+      id: 55,
+      src: "/newBeauty/55.jpg",
+      alt: "Photo 55",
+    },
+    {
+      id: 54,
+      src: "/newBeauty/54.jpg",
+      alt: "Photo 54",
+    },
+
+    {
+      id: 53,
+      src: "/newBeauty/53.jpg",
+      alt: "Photo 53",
+    },
+
+    {
+      id: 52,
+      src: "/newBeauty/52.jpg",
+      alt: "Photo 52",
+    },
+
+    {
+      id: 51,
+      src: "/newBeauty/51.jpg",
+      alt: "Photo 51",
+    },
+
+
+
+
+
+
+
+
+
+
+
+
     {
       id: 48,
       src: "/newBeauty/48.jpg",
       alt: "Photo 48",
     },
+
+    {
+      id: 50,
+      src: "/newBeauty/50.jpg",
+      alt: "Photo 50",
+    },
+
+    {
+      id: 49,
+      src: "/newBeauty/49.jpg",
+      alt: "Photo 49",
+    },
+
+
     {
       id: 47,
       src: "/newBeauty/47.jpg",
