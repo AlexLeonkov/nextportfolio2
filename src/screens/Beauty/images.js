@@ -1,6 +1,10 @@
 export const newPhotos = {
   column1: [
-
+    {
+      id: 56,
+      src: "/newBeauty/56.jpg",
+      alt: "Photo 56",
+    },
     {
       id: 53,
       src: "/newBeauty/53.jpg",
@@ -17,7 +21,6 @@ export const newPhotos = {
       src: "/newBeauty/49.jpg",
       alt: "Photo 49",
     },
-
 
     {
       id: 43,
@@ -68,7 +71,11 @@ export const newPhotos = {
     },
   ],
   column2: [
-
+    {
+      id: 57,
+      src: "/newBeauty/57.jpg",
+      alt: "Photo 57",
+    },
     {
       id: 54,
       src: "/newBeauty/54.jpg",
@@ -144,7 +151,11 @@ export const newPhotos = {
     },
   ],
   column3: [
-
+    {
+      id: 58,
+      src: "/newBeauty/58.jpg",
+      alt: "Photo 58",
+    },
     {
       id: 55,
       src: "/newBeauty/55.jpg",
@@ -219,7 +230,6 @@ export const newPhotos = {
     },
   ],
   column4: [
-
     {
       id: 51,
       src: "/newBeauty/51.jpg",
@@ -364,13 +374,22 @@ export const newPhotos = {
 };
 
 export const PhotosMobile = {
-
-
-
-
   column1: [
-
-
+    {
+      id: 56,
+      src: "/newBeauty/56.jpg",
+      alt: "Photo 56",
+    },
+    {
+      id: 57,
+      src: "/newBeauty/57.jpg",
+      alt: "Photo 57",
+    },
+    {
+      id: 58,
+      src: "/newBeauty/58.jpg",
+      alt: "Photo 58",
+    },
     {
       id: 55,
       src: "/newBeauty/55.jpg",
@@ -400,17 +419,6 @@ export const PhotosMobile = {
       alt: "Photo 51",
     },
 
-
-
-
-
-
-
-
-
-
-
-
     {
       id: 48,
       src: "/newBeauty/48.jpg",
@@ -428,7 +436,6 @@ export const PhotosMobile = {
       src: "/newBeauty/49.jpg",
       alt: "Photo 49",
     },
-
 
     {
       id: 47,
@@ -451,35 +458,31 @@ export const PhotosMobile = {
       alt: "Photo 44",
     },
 
-
-
-
- {
-    id: 42,
-    src: "/newBeauty/42.jpg",
-    alt: "Photo 42",
-  },
-  {
-    id: 40,
-    src: "/newBeauty/40.jpg",
-    alt: "Photo 40",
-  },
-  {
-    id: 41,
-    src: "/newBeauty/41.jpg",
-    alt: "Photo 41",
-  },
-  {
-    id: 39,
-    src: "/newBeauty/39.jpg",
-    alt: "Photo 39",
-  },
-  {
-    id: 43,
-    src: "/newBeauty/43.jpg",
-    alt: "Photo 43",
-  },
-
+    {
+      id: 42,
+      src: "/newBeauty/42.jpg",
+      alt: "Photo 42",
+    },
+    {
+      id: 40,
+      src: "/newBeauty/40.jpg",
+      alt: "Photo 40",
+    },
+    {
+      id: 41,
+      src: "/newBeauty/41.jpg",
+      alt: "Photo 41",
+    },
+    {
+      id: 39,
+      src: "/newBeauty/39.jpg",
+      alt: "Photo 39",
+    },
+    {
+      id: 43,
+      src: "/newBeauty/43.jpg",
+      alt: "Photo 43",
+    },
 
     {
       id: 33,
