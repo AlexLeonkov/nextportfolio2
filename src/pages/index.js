@@ -11,6 +11,7 @@ export default function Home() {
     <>
       <Head>
         <meta name="p:domain_verify" content="73de840c6013b7f92c720ab44b79b4e4" />
+        <link rel="icon" href="/favicon.ico" /> {/* Point to your favicon file */}
       </Head>
       <BeautyScreen />
     </>
