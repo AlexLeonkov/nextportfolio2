@@ -97,7 +97,7 @@ const InfoScreen = () => {
           <FontAwesomeIcon icon={faBehance} />
         </Link>
 
-        <Link className={styles.socialIcon} href="https://pin.it/72jZOCn/">
+        <Link className={styles.socialIcon} href="https://www.pinterest.de/lenasmoliuk/">
           <FontAwesomeIcon icon={faPinterestP} />
         </Link>
       </div>

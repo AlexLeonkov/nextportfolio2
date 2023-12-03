@@ -83,7 +83,7 @@ function HeaderMobile() {
               <FontAwesomeIcon icon={faBehance} />
             </a>
 
-            <a className={styles.socialIcon} href="https://pin.it/72jZOCn/">
+            <a className={styles.socialIcon} href="https://www.pinterest.de/lenasmoliuk/">
               <FontAwesomeIcon icon={faPinterestP} />
             </a>
           </div>
