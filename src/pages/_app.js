@@ -1,6 +1,6 @@
 import "@component/styles/globals.css";
 import "antd/dist/reset.css";
-
+import Head from "next/head";
 import Layout from "../components/layout";
 // import Font Awesome CSS
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -35,10 +35,17 @@ export default function App({ Component, pageProps }) {
 
   //check
   return (
+<>
+<Head>
+        <link rel="icon" href="/favicon.ico" /> {/* Point to your favicon file */}
+        
+        {/* Any other head elements you want to include globally */}
+      </Head>
     <GaleryProvider>
       <Layout>
         <Component {...pageProps} />
       </Layout>
     </GaleryProvider>
+    </>
   );
 }
