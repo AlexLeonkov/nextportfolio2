@@ -7,5 +7,12 @@ import BeautyScreen from "@component/screens/Beauty/BeautyScreen";
 import { useEffect } from "react";
 
 export default function Home() {
-  return <BeautyScreen />;
+  return (
+    <>
+      <Head>
+        <meta name="p:domain_verify" content="73de840c6013b7f92c720ab44b79b4e4" />
+      </Head>
+      <BeautyScreen />
+    </>
+  );
 }
