@@ -341,6 +341,11 @@ export const newPhotos = {
   ],
   column5: [
     {
+      id: 67,
+      src: "/newBeauty/67.jpg",
+      alt: "Photo 67",
+    },
+    {
       id: 64,
       src: "/newBeauty/64.jpg",
       alt: "Photo 64",
@@ -429,6 +434,12 @@ export const PhotosMobile = {
       id: 62,
       src: "/newBeauty/62.jpg",
       alt: "Photo 62",
+    },
+
+    {
+      id: 67,
+      src: "/newBeauty/67.jpg",
+      alt: "Photo 67",
     },
     {
       id: 63,
