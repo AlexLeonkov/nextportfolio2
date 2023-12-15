@@ -425,6 +425,12 @@ export const newPhotos = {
 
 export const PhotosMobile = {
   column1: [
+
+    {
+      id: 68,
+      src: "/newBeauty/68.jpg",
+      alt: "Photo 68",
+    },
     {
       id: 65,
       src: "/newBeauty/65.jpg",
