@@ -83,6 +83,13 @@ export const newPhotos = {
     },
   ],
   column2: [
+
+
+    {
+      id: 70,
+      src: "/newBeauty/70.jpg",
+      alt: "Photo 70",
+    },
     {
       id: 65,
       src: "/newBeauty/65.jpg",
@@ -169,6 +176,12 @@ export const newPhotos = {
     },
   ],
   column3: [
+
+    {
+      id: 68,
+      src: "/newBeauty/68.jpg",
+      alt: "Photo 68",
+    },
     {
       id: 62,
       src: "/newBeauty/62.jpg",
@@ -253,6 +266,12 @@ export const newPhotos = {
     },
   ],
   column4: [
+
+    {
+      id: 69,
+      src: "/newBeauty/69.jpg",
+      alt: "Photo 69",
+    },
     {
       id: 63,
       src: "/newBeauty/63.jpg",
@@ -424,17 +443,28 @@ export const newPhotos = {
 };
 
 export const PhotosMobile = {
-  column1: [ {
+  column1: [ 
+
+
+     {
+      id: 70,
+      src: "/newBeauty/70.jpg",
+      alt: "Photo 70",
+    },
+    
+     {
+      id: 68,
+      src: "/newBeauty/68.jpg",
+      alt: "Photo 68",
+    },
+    
+    {
     id: 69,
     src: "/newBeauty/69.jpg",
     alt: "Photo 69",
   },
 
-    {
-      id: 68,
-      src: "/newBeauty/68.jpg",
-      alt: "Photo 68",
-    },
+   
     {
       id: 65,
       src: "/newBeauty/65.jpg",
